@@ -1,4 +1,4 @@
-# Hello, you are WELCOOME  in EARY-RESUME website =)
+# Hello, you are WELCOOME  in EASY-RESUME website =)
 
 
 ## About Easy-Resume   
