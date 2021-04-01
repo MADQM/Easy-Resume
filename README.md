@@ -27,7 +27,7 @@
 | Pages                 |      links                                                                        |
 | --------------------- | ----------------------------------------------------------------------------------|
 |   Team Agreement      | [Team Agreement file link](https://madqm.github.io/Easy-Resume/Team%20Agreement)  |
-|                       |                                                                                   |
+|   Requirements        | [Requirements](https://madqm.github.io/Easy-Resume/requirements)                  |
 |                       |                                                                                   |
 |                       |                                                                                   |
 |                       |                                                                                   |

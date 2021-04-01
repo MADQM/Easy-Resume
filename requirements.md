@@ -10,8 +10,8 @@
 
 # Software Requirements
 --------------------------------------------------
-The web app will provide a beautiful resume designs to the users.
-The web app will provide some advice in writing professional resume to the users.
-The web app will allow the user to download the created resume.
+The web app will provide a beautiful resume designs to the users.   
+The web app will provide some advice in writing professional resume to the users.   
+The web app will allow the user to download the created resume.   
 
 
