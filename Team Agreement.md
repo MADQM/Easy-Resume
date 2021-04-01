@@ -16,7 +16,7 @@
 * Days of commincate : **every day**.   
 * Time to commincate : any time during the day between **(9am - 9pm)**.   
 * Metting time: there is a meeting everyday at **(6pm)** to show updates.   
-* We choss [GitHub Projects](https://github.com/MADQM/Easy-Resume/projects/1?add_cards_query=is%3Aopen) to manage our work
+* We chose [GitHub Projects](https://github.com/MADQM/Easy-Resume/projects/1?add_cards_query=is%3Aopen) to manage our work
 
 >
 > The daily meeting for *assess* all the tasks had done, and decide which need managing and which will *merge* to the main file.
