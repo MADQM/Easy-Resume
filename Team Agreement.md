@@ -1,4 +1,4 @@
-# MADQM GROUP GUID LINES
+# MADQM GROUP GUIDLINES
 
 
 ## Team members 
