@@ -5,6 +5,10 @@ h1{
     font-size: 37px;
     margin-left: 20%;
     margin-bottom: 84px;
+    background-color: rgb(74, 74, 145, 20%);
+    width: 777px;
+    border-radius: 21px;
+    padding: 11px;
 }
 
 b{
@@ -28,6 +32,7 @@ b{
 
 .sight{
     flex: 33.33%;
+
 }
 
 
@@ -70,7 +75,7 @@ b{
 
 
 
-  
+
   @-webkit-keyframes swing
   {
       15%
