@@ -7,8 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-        <link rel="stylesheet" href="style/reset.css">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/style.css">
         <title>Document</title>
     </head>
     <body>
@@ -18,7 +18,7 @@
                 <div class="navbar">
                     <img id="logo" src="https://placehold.it/200x70/151515" alt="logo"/>
                     <a  class="nav1" href="index.html">Home</a>
-                    <a  class="nav2" href="#news">News</a>
+                    <a  class="nav2" href="forms.html">News</a>
                     <a  class="nav3" href="#contact">Contact</a>
                   </div>
         
@@ -30,7 +30,7 @@
         <main>
 
 
-            <form action="/action_page.php">
+            <form >
                 <fieldset>
                   <legend>Personalia:</legend>
                   <label for="fName">First name:</label><br>
@@ -45,157 +45,12 @@
                   <input type="text" id="eMail" name="eMail"><br>
                   <label for="adress">Address:</label><br>
                   <input type="text" id="adress" name="adress"><br>
-                  <form action="/action_page.php">
-                    <fieldset>
-                      <legend>Education:</legend>
-                      <label for="unvName">University Name</label><br>
-                      <input type="text" id="unvName" name="unvName" ><br>
-                      <label for="major">Major:</label><br>
-                      <input type="text" id="major" name="major"><br>
-                      <label for="yearOfGraduate">Year Of Graduate :</label><br>
-                      <input type="number" pattern='[0-9]{4}' id="yearOfGraduate" name="yyyy"><br>
-                      <label for="degree">Degree:</label><br>
-                  <input type="number" id="degree" name="degree"><br>
-                      
-                      
-                      <br>
-                      <input type="submit" value="Submit">
-                    </fieldset>
-                  </form>
+                 
 
-                  <form action="/action_page.php">
-                    <fieldset>
-                      <legend>Experiance:</legend>
-                      <label for="tiJob">Title</label><br>
-                      <input type="text" id="tiJob" name="tiJob" ><br>
-                      <label for="orgName">Orgnaization Name:</label><br>
-                      <input type="text" id="orgName" name="orgName"><br>
-                      <label for="numberOfExperiance">Number Of Experiance :</label><br>
-                      <input type="number" pattern='[0-9]{2}' id="numberOfExperiance" name="numberOfExperiance"><br>
-                      
-                      
-                      
-                      <br>
-                      <input type="submit" value="Submit">
-                    </fieldset>
-                  </form>
-                  <form action="/action_page.php">
-                    <fieldset>
-                      <legend>Skills</legend>
-                      <label for="sname">Skill Name</label><br>
-                      <input type="text" id="sname" name="sname" ><br>
-                      <label for="placeOfLearning">Where You Learn It:</label><br>
-                      <input type="text" id="placeOfLearning" name="placeOfLearning"><br>
-                      <label for="numberOfPractising">Number Of Practising  :</label><br>
-                      <input type="number" pattern='[0-9]{2}' id="numberOfPractising" name="numberOfPractising"><br>
-                      <br>
-                      <input type="submit" value="Submit">
-                    </fieldset>
-                  </form>
+                 
+                 
 
 
-<form action="/action_page.php">
-                    <fieldset>
-                      <legend>Languages</legend>
-                    <label for="LanguageSelect">Choose a Language:</label>
-            <select data-placeholder="Choose a Language...">
-                    <option value="">--Please choose a Language--</option>
-                    <option value="AF">Afrikaans</option>
-                    <option value="SQ">Albanian</option>
-                    <option value="AR">Arabic</option>
-                    <option value="HY">Armenian</option>
-                    <option value="EU">Basque</option>
-                    <option value="BN">Bengali</option>
-                    <option value="BG">Bulgarian</option>
-                    <option value="CA">Catalan</option>
-                    <option value="KM">Cambodian</option>
-                    <option value="ZH">Chinese (Mandarin)</option>
-                    <option value="HR">Croatian</option>
-                    <option value="CS">Czech</option>
-                    <option value="DA">Danish</option>
-                    <option value="NL">Dutch</option>
-                    <option value="EN">English</option>
-                    <option value="ET">Estonian</option>
-                    <option value="FJ">Fiji</option>
-                    <option value="FI">Finnish</option>
-                    <option value="FR">French</option>
-                    <option value="KA">Georgian</option>
-                    <option value="DE">German</option>
-                    <option value="EL">Greek</option>
-                    <option value="GU">Gujarati</option>
-                    <option value="HE">Hebrew</option>
-                    <option value="HI">Hindi</option>
-                    <option value="HU">Hungarian</option>
-                    <option value="IS">Icelandic</option>
-                    <option value="ID">Indonesian</option>
-                    <option value="GA">Irish</option>
-                    <option value="IT">Italian</option>
-                    <option value="JA">Japanese</option>
-                    <option value="JW">Javanese</option>
-                    <option value="KO">Korean</option>
-                    <option value="LA">Latin</option>
-                    <option value="LV">Latvian</option>
-                    <option value="LT">Lithuanian</option>
-                    <option value="MK">Macedonian</option>
-                    <option value="MS">Malay</option>
-                    <option value="ML">Malayalam</option>
-                    <option value="MT">Maltese</option>
-                    <option value="MI">Maori</option>
-                    <option value="MR">Marathi</option>
-                    <option value="MN">Mongolian</option>
-                    <option value="NE">Nepali</option>
-                    <option value="NO">Norwegian</option>
-                    <option value="FA">Persian</option>
-                    <option value="PL">Polish</option>
-                    <option value="PT">Portuguese</option>
-                    <option value="PA">Punjabi</option>
-                    <option value="QU">Quechua</option>
-                    <option value="RO">Romanian</option>
-                    <option value="RU">Russian</option>
-                    <option value="SM">Samoan</option>
-                    <option value="SR">Serbian</option>
-                    <option value="SK">Slovak</option>
-                    <option value="SL">Slovenian</option>
-                    <option value="ES">Spanish</option>
-                    <option value="SW">Swahili</option>
-                    <option value="SV">Swedish </option>
-                    <option value="TA">Tamil</option>
-                    <option value="TT">Tatar</option>
-                    <option value="TE">Telugu</option>
-                    <option value="TH">Thai</option>
-                    <option value="BO">Tibetan</option>
-                    <option value="TO">Tonga</option>
-                    <option value="TR">Turkish</option>
-                    <option value="UK">Ukrainian</option>
-                    <option value="UR">Urdu</option>
-                    <option value="UZ">Uzbek</option>
-                    <option value="VI">Vietnamese</option>
-                    <option value="CY">Welsh</option>
-                    <option value="XH">Xhosa</option>
-            </select>
-
-                  <label for="rateReading">Reading:</label>
-            <select id="rateReading">
-                 <option>Beginner</option>
-                 <option>Intermediate</option>
-                 <option>Fluent</option>
-                </select>
-                 <label for="rateWriting">Writing:</label>
-                 <select id="rateWriting">
-                <option>Beginner</option>
-                <option>Intermediate</option>
-                <option>Fluent</option>
-            </select>
-                <label for="rateListening">Listening:</label>
-                <select id="rateListening">
-                <option>Beginner</option>
-                <option>Intermediate</option>
-                <option>Fluent</option>
-            </select>
-            </select>
-            <input type="submit" value="Submit">
-        </fieldset>
-      </form>
                   <br><br>
                   <h5 > Write about your self :</h5>
                   <textarea name="message" style="width: 800px;; height: 100px;;">The cat was playing in the garden.</textarea>
@@ -208,14 +63,14 @@
                   
                   
                   <br><br><br>
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Next">
                 </fieldset>
               </form>
 
 
 
 
-
+              <a href="educationForm.html" class="next">Next &raquo;</a>
 
 
 
