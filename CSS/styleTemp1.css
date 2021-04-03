@@ -1,6 +1,7 @@
 body
 {
     font-family: 'kalam';
+    word-wrap:break-word;
 }
 
 .container

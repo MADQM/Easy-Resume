@@ -528,3 +528,176 @@ document.getElementById('delete23').addEventListener('click', function(){deleteF
 //to check if the user wrote in the input box and clicked enter 
 document.getElementById('bioInput').addEventListener('keyup', function(){changeName(event, 'bio', 'bioInput');} );
 
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 1 field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit24', 'delete24');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit24', 'delete24');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit24').addEventListener('click', function(){editFun('lang1', 'lang1Input');});
+document.getElementById('delete24').addEventListener('click', function(){deleteFun('lang1Item', 'lang1Input');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang1Input').addEventListener('keyup', function(){changeName(event, 'lang1', 'lang1Input');} );
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 1 level field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit25', 'delete25');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit25', 'delete25');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit25').addEventListener('click', function(){editFun('lang1Level', 'lang1LevelInput');});
+document.getElementById('delete25').addEventListener('click', function(){deleteFun('lang1Level', 'lang1LevelInput');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang1LevelInput').addEventListener('keyup', function(){changeName(event, 'lang1Level', 'lang1LevelInput');} );
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 2 field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit26', 'delete26');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit26', 'delete26');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit26').addEventListener('click', function(){editFun('lang2', 'lang2Input');});
+document.getElementById('delete26').addEventListener('click', function(){deleteFun('lang2Item', 'lang2Input');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang2Input').addEventListener('keyup', function(){changeName(event, 'lang2', 'lang2Input');} );
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 2 level field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit27', 'delete27');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit27', 'delete27');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit27').addEventListener('click', function(){editFun('lang2Level', 'lang2LevelInput');});
+document.getElementById('delete27').addEventListener('click', function(){deleteFun('lang2Level', 'lang2LevelInput');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang2LevelInput').addEventListener('keyup', function(){changeName(event, 'lang2Level', 'lang2LevelInput');} );
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 3 field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit28', 'delete28');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit28', 'delete28');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit28').addEventListener('click', function(){editFun('lang3', 'lang3Input');});
+document.getElementById('delete28').addEventListener('click', function(){deleteFun('lang3Item', 'lang3Input');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang3Input').addEventListener('keyup', function(){changeName(event, 'lang3', 'lang3Input');} );
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 3 level field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit29', 'delete29');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit29', 'delete29');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit29').addEventListener('click', function(){editFun('lang3Level', 'lang3LevelInput');});
+document.getElementById('delete29').addEventListener('click', function(){deleteFun('lang3Level', 'lang3LevelInput');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang3LevelInput').addEventListener('keyup', function(){changeName(event, 'lang3Level', 'lang3LevelInput');} );
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 4 field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit30', 'delete30');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit30', 'delete30');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit30').addEventListener('click', function(){editFun('lang4', 'lang4Input');});
+document.getElementById('delete30').addEventListener('click', function(){deleteFun('lang4Item', 'lang4Input');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang4Input').addEventListener('keyup', function(){changeName(event, 'lang4', 'lang4Input');} );
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for language 3 level field
+
+//once the user hover on this div , it will appear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseover', function(){hoverIn('edit31', 'delete31');} );
+
+
+//once the user hover out from this div , it will disappear the edit and delete options
+document.getElementById('langPart').addEventListener('mouseout', function() {hoverOut('edit31', 'delete31');} );
+
+
+//to check if the user click the edit or the delete option 
+document.getElementById('edit31').addEventListener('click', function(){editFun('lang4Level', 'lang4LevelInput');});
+document.getElementById('delete31').addEventListener('click', function(){deleteFun('lang4Level', 'lang4LevelInput');});
+
+
+//to check if the user wrote in the input box and clicked enter 
+document.getElementById('lang4LevelInput').addEventListener('keyup', function(){changeName(event, 'lang4Level', 'lang4LevelInput');} );
+
+
+
+
+
+
