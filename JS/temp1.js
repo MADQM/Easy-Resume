@@ -7,6 +7,122 @@
 // const deletUserName = document.getElementById('delete');
 // const nameInput = document.getElementById('nameInput');
 
+const colors = [
+'#DE354C',
+'#3C1874',
+'#283747',
+'#F3F3F3',
+'#B73225',
+'#004E7C',
+'#591COB',
+'#5C5F58',
+'#DCE1E3',
+'#DDAF94',
+'#E8CEBF',
+'#266150',
+'#4F4846',
+'#FDF8F5',
+'#12232E',
+'#007CC7',
+'#4DA8DA',
+'#203647',
+'#EEFBFB',
+'#202020',
+'#3F3F3F',
+'#707070',
+'#FFD6C',
+'#FFFFFF',
+'#164A41',
+'#4D774E',
+'#9DC88D',
+'#F1B24A',
+'#A3BCB6',
+'#39603D',
+'#3C403D',
+'#DADED4',
+]
+let colorIndex = 0 ;   //to hold the random number for the index
+function randomNumber(min, max)
+{
+    let random ;
+    for(;;)     //to loop untill the random number became not the same as the previous
+    {
+        random = Math.floor(Math.random()*(max-min)+min);
+            if(colorIndex !=random )   //check if is it the same as the previous
+            return random ;
+    }
+}
+
+
+//to check if the user clicked the change color button for the left section , so it will change the color 
+document.getElementById('changeColorLeft').addEventListener('click', function(){
+    colorIndex = randomNumber(0, colors.length - 0.5) ;
+    document.getElementsByClassName('leftSection')[0].style.backgroundColor = colors[colorIndex];
+})
+
+//to check if the user clicked the change font color button for the left section , so it will change the color
+document.getElementById('changeFontColorLeft').addEventListener('click', function(){
+    colorIndex = randomNumber(0, colors.length - 0.5) ;
+    document.getElementsByClassName('leftSection')[0].style.color = colors[colorIndex];
+})
+
+//to check if the user clicked the change color button for the right section, so it will change the color 
+document.getElementById('changeColorRight').addEventListener('click', function(){
+    colorIndex = randomNumber(0, colors.length - 0.5) ;
+    document.getElementsByClassName('rightSection')[0].style.backgroundColor = colors[colorIndex];
+})
+
+//to check if the user clicked the change font color button for the right section, so it will change the color
+document.getElementById('changeFontColorRight').addEventListener('click', function(){
+    colorIndex = randomNumber(0, colors.length - 0.5) ;
+    document.getElementsByClassName('rightSection')[0].style.color = colors[colorIndex];
+})
+
+//to get the input color value and assign it 
+document.getElementById('leftColorForm').addEventListener('submit', function(){
+    event.preventDefault();
+    document.getElementsByClassName('leftSection')[0].style.backgroundColor = document.getElementById('custColorLeft').value;
+    document.getElementById('leftColorForm').reset();
+})
+
+//to get the input color value and assign it 
+document.getElementById('leftFontColorForm').addEventListener('submit', function(){
+    event.preventDefault();
+    document.getElementsByClassName('leftSection')[0].style.color = document.getElementById('custFontColorLeft').value;
+    document.getElementById('leftFontColorForm').reset();
+})
+
+//to get the input color value and assign it 
+document.getElementById('rightColorForm').addEventListener('submit', function(){
+    event.preventDefault();
+    document.getElementsByClassName('rightSection')[0].style.backgroundColor = document.getElementById('custColorRight').value;
+    document.getElementById('rightColorForm').reset();
+})
+
+//to get the input color value and assign it 
+document.getElementById('rightFontColorForm').addEventListener('submit', function(){
+    event.preventDefault();
+    document.getElementsByClassName('rightSection')[0].style.color = document.getElementById('custFontColorRight').value;
+    document.getElementById('rightFontColorForm').reset();
+})
+
+
+//to reset to default colors
+document.getElementById('reset').addEventListener('click' , function(){
+    document.getElementsByClassName('leftSection')[0].style.backgroundColor = '#FCB11C';
+    document.getElementsByClassName('leftSection')[0].style.color = 'black';
+    document.getElementsByClassName('rightSection')[0].style.backgroundColor = '#f5e0e042';
+    document.getElementsByClassName('rightSection')[0].style.color = 'black';
+
+
+})
+
+//to hide all buttons by hidding the container div
+document.getElementById('hideBtns').addEventListener('click', function(){
+    document.getElementById('buttons').style.display = 'none';
+})
+
+
 //functions :
 
 //once the user hover on this div , it will appear the edit and delete options
