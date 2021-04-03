@@ -1,0 +1,271 @@
+body
+{
+    font-family: 'kalam';
+}
+
+.container
+{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+    margin-top:3%;
+    
+}
+/* Style of the left section */
+.leftSection
+{
+    display:inline-block;
+    width:23%;
+    min-height:1350px;
+    background-color:#FCB11C;
+    float:left;
+    box-shadow: 28px 0px #000000;
+}
+
+#userImg
+{
+    width:150px;
+    height:150px;
+    border-radius:80px;
+    /* margin-left:24%; */
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#userName
+{
+    text-align:center;
+}
+
+#userTitle
+{
+    /* text-align: center; */
+}
+
+.contact li
+{
+    /* font-size:20px; */
+    list-style-type:none;
+    margin-bottom:15%;
+}
+
+.contact li img 
+{
+    width:10%;
+    display: inline-block;
+     margin-right:5%;
+    position: relative;
+    top:3px;
+    
+}
+.headers
+{
+    position: relative;
+    top: 1.5vw;
+    margin-left:8%;
+    font-size: 20px;
+}
+
+.skills li
+{
+    /* font-size:20px; */
+    /* list-style-type:none; */
+    margin-bottom:5%;
+}
+
+.education li
+{
+    /* font-size:20px; */
+    /* list-style-type:none; */
+    margin-bottom:5%;
+}
+
+/* End Style of the left section */
+
+
+/* Style of the right section */
+.rightSection
+{
+    display:inline-block;
+    width: 77%;
+    min-height:1350px;
+    background-color:#f5e0e042;
+    float:right;
+    /* box-shadow: 28px 0px #00000054; */
+}
+
+.rightSection h1
+{
+    margin-left:5%;
+    margin-bottom: 0px;
+}
+
+.rightSection div
+{
+    margin-top:5%;
+    margin-bottom:10%;
+}
+.rightHR
+{
+    margin:0px;
+}
+
+#bio
+{
+    margin-left:10%;
+    font-size:20px
+}
+
+#exp
+{
+    margin-left:10%;
+    font-size:20px
+}
+
+.experience
+{
+    margin-left:8%;
+    margin-top:5%;
+}
+
+.experience li
+{
+    margin-bottom:5%;
+    font-size:20px;
+}
+
+.languages
+{
+    margin-left:8%;
+    margin-top:5%;
+}
+
+.languages li
+{
+    margin-bottom:5%;
+    font-size:20px;
+}
+
+.languages li .rated
+{
+    color:#FCB11C;
+}
+
+
+.rightHR
+{
+    border-top:0.5px solid #FCB11C;
+}
+
+
+.leftHR
+{
+    border-top:0.5px solid #f5e0e042;
+}
+
+
+
+
+
+
+
+
+
+#userName
+{
+    display: inline-block;
+    margin-left: 20%;
+}
+
+#userTitle
+{
+    display: inline-block;
+    margin-left: 20%;
+}
+.edit
+{
+    display:none;
+    /* margin-le:5px; */
+    /* position: relative;
+    right:-10px; */
+    margin-left:10px;
+}
+.edit:hover
+{
+    cursor: pointer;
+    color:red;
+}
+
+
+input
+{
+    display: none;
+    width:40%;
+    background-color: #fcb11c77;
+    margin-left: 24%;
+}
+
+.leftInput2
+{
+    margin-left:3%;
+}
+
+.leftSection
+{
+    width:32%;
+}
+
+.rightSection
+{
+    width:68%;
+}
+
+.delete
+{
+    display:none;
+    margin-left:10px;
+    /* position: relative;
+    left: 8%; */
+}
+.delete:hover
+{
+    cursor: pointer;
+    color:red;
+}
+
+
+.contact li 
+{
+    display: inline;
+}
+
+.skillsPart li
+{
+    display: inline;
+}
+
+
+.imagePart:hover , .contactPart:hover , .skillsPart:hover , .educationPart:hover
+{
+    font-size:13px;
+}
+
+
+#major1 , #major2 , #major3 , #major4
+{
+    display: inline-block;
+}
+
+#bioInput
+{
+    margin-left:14%;
+    width: 65%;
+}
+#edit23 
+{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left:38%;
+}
