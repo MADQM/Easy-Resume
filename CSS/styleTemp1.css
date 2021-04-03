@@ -277,7 +277,7 @@ input
 }
 #edit23 
 {
-    display: inline-block;
+    /* display: inline-block; */
     margin-top: 10%;
     margin-left:38%;
 }
