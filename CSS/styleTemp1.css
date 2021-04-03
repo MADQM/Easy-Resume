@@ -17,7 +17,7 @@ body
 .leftSection
 {
     display:inline-block;
-    width:23%;
+    width:40%;
     min-height:1350px;
     background-color:#FCB11C;
     float:left;
@@ -33,6 +33,17 @@ body
     display: block;
     margin-left:auto;
     margin-right:auto;
+}
+
+#imageLabel
+{
+    display: none;
+}
+
+#imageLabel:hover
+{
+    cursor: pointer;
+    color:red;
 }
 
 #userName
@@ -90,7 +101,7 @@ body
 .rightSection
 {
     display:inline-block;
-    width: 77%;
+    width: 60%;
     min-height:1350px;
     background-color:#f5e0e042;
     float:right;

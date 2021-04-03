@@ -13,7 +13,8 @@
     <section class="container">
         <section class="leftSection">
             <div class="imagePart">
-                <img id="userImg" src="./Images/QusayPic.jpg" >
+                <img id="userImg" src="./Images/QusayPic.jpg" ><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"><label for="file" id="imageLabel">Upload Image</label>
+
                 <input id="nameInput" class="leftInput1" placeholder="Enter your name"><h1 id="userName">Qusay Al-Amarat</h1> <span id="edit1" class="edit">Edit</span><span id="delete1" class="delete">Delete</span>
                 <input id="titleInput" class="leftInput1" placeholder="Enter your job title"><h1 id="userTitle">Web developer</h1><span id="edit2" class="edit">Edit</span><span id="delete2" class="delete">Delete</span>
                 <h1 class="headers">Contacts :</h1>
@@ -99,6 +100,7 @@
         </section>
 
     </section>
+    
     <script src="JS/temp1.js"></script>
 </body>
 </html>

@@ -61,6 +61,26 @@ function changeName(event, dataId, inputId)
 
 
 
+//////to upload an image
+document.getElementsByClassName('imagePart')[0].addEventListener('mouseover', function(){
+    document.getElementById('imageLabel').style.display='inline';
+    document.getElementById('userImg').style.display = 'inline';
+})
+
+document.getElementsByClassName('imagePart')[0].addEventListener('mouseout', function(){
+    document.getElementById('imageLabel').style.display='none';
+    document.getElementById('userImg').style.display = 'block';
+})
+
+var loadFile = function(event) {
+	var image = document.getElementById('userImg');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+////////////////////////
+
+
+
 /////for the user name field
 //once the user hover on this div , it will appear the edit and delete options
 document.getElementsByClassName('imagePart')[0].addEventListener('mouseover', function(){hoverIn('edit1', 'delete1');} );
@@ -700,4 +720,5 @@ document.getElementById('lang4LevelInput').addEventListener('keyup', function(){
 
 
 
+///////////////////////////////////////////////
 
