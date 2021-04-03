@@ -60,6 +60,9 @@
 //         }
 //     }
 // };
+const tabelElement = document.getElementById('table');
+tabelElement.addEventListener('click', removeItemFromCart);
+
 function Education (unName,unMajor,yearOfGraduate,unDegree)
 {
     this.unName = unName;
@@ -69,21 +72,31 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
     this.headerRander = function()
     {
       
-               
+
+     
             
-               const tableRow2 = document.createElement('tr');
+               let tableRow2 = document.createElement('tr');
                tabelElement.appendChild(tableRow2);
                const tableData = document.createElement('td');
                tableRow2.appendChild(tableData);
-               tableData.textContent=this.unName;
-               let eduDetails =[this.unMajor,this.yearOfGraduate,this.unDegree]
+              //  tableData.textContent=;
+               let buttonEl = document.createElement('button');
+               let eduDetails =[this.unName,this.unMajor,this.yearOfGraduate,this.unDegree]
+tableData.appendChild(buttonEl);
+     buttonEl.textContent = 'X';
+     
+      
                for (let i = 0; i < eduDetails.length; i++){
+ buttonEl.setAttribute('type', 'submit');
+      buttonEl.setAttribute('name', 0);
+               
                 const tableData1 = document.createElement('td');
             
-                tableRow2.appendChild(tableData1);
+                
             
-            
-            
+        
+               
+            tableRow2.appendChild(tableData1);
                 tableData1.textContent=eduDetails[i];
                 
                }
@@ -91,9 +104,20 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
             
               
     };
+    
+
 }
+function removeItemFromCart(event)
+    {
+      tabelElement.deleteRow(1);
+    }
+
+// function removeItem(item) {
+
+// this.splice(item,1);
 
 
+// }
 
 // Education.prototype.render()
 // {
@@ -103,15 +127,19 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
 
 
 
+// this.tabelElement.splice(event.target.id,1); 
+// functio removeItem(event)
+// {
 
-
+// }
 
 
 
      const section = document.getElementById('formSection');
 const articleElement = document.createElement('article');
 section.appendChild(articleElement);
-const tabelElement = document.createElement('table');
+
+
 
 function table()
 { 
@@ -120,6 +148,9 @@ function table()
 articleElement.appendChild(tabelElement);
      const tableHeaderRow1 = document.createElement('tr');
          tabelElement.appendChild(tableHeaderRow1);
+         const tableHeader5 = document.createElement('th');
+         tableHeaderRow1.appendChild(tableHeader5);
+         tableHeader5.textContent='Remove';
          const tableHeader = document.createElement('th');
         tableHeaderRow1.appendChild(tableHeader);
          tableHeader.textContent='University Name';
