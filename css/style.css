@@ -3,27 +3,36 @@
 }
 
 
-h1{
+.top h1{
     position: relative;
-    color: rgb(117, 117, 219);
+    color: black;
     font-family: 'New Tegomin', serif;
     font-size:70px;
-    margin-left: 10%;
+    margin-left: 39%;
     width: 400px;
     text-align: center;
     margin-top: 170px;
+    background-color: #ffffff61;
 
     
 }
 
+main
+{
+    margin-top: 88px;
+}
 
+#templates .navbar
+{
+    width:100%;
+}
 
 .top {
     width: 100%;
     /* height: 100%; */
-    height: 650px;  
-      background-size: cover;
-    background-image: url(/img/Inked2.png);
+    height: 500px;  
+    background-size: cover;
+    background-image: url('https://coolwallpapers.me/picsup/3086336-blur_business_clock_composition_indoors_notepad_number_office_paper_pen_smartphone_table_technology_time_watch_public-domain-images.jpg');
     background-repeat: no-repeat;
     display: flex;
     margin-top: 25px;
