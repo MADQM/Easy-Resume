@@ -31,41 +31,45 @@
     
     </header>
     <div id="buttons">
+        <form >
+            <fieldset><legend>Customize Colors</legend>
         <div id="div1">
-            <button id="changeColorLeft" class="colorBtn">Change Color Randomly</button>
-            <button id="changeFontColorLeft" class="colorBtn">Change Font Color Randomly</button>
-        </div> 
+           <label>Change Left Side Background Color :&emsp; &emsp;</label> <button id="changeColorLeft" class="colorBtn">Change</button><br><br>
+           <label class="labelColor">Change Left Side Color Font : &emsp;&emsp;&emsp;&emsp;&emsp;</label><button id="changeFontColorLeft" class="colorBtn">Change</button>
+        </div> <br>
         <div id="div2">
-            <button id="changeColorRight" class="colorBtn">Change Color Randomly</button>
-            <button id="changeFontColorRight" class="colorBtn">Change Font Color Randomly</button>
+            <label>Change Right Side Background Color : &emsp;</label> <button id="changeColorRight" class="colorBtn">Change</button><br><br>
+            <label class="labelColor">Change Right Side Color Font :&emsp; &emsp;&emsp;&emsp;</label><button id="changeFontColorRight" class="colorBtn">Change</button>
         </div>
 
         <div id="btnColorContainer" >
         <div id='div3'>
-            <form id="leftColorForm">
+            <!-- <form id="leftColorForm"> -->
             <input type="text" value="" id="custColorLeft" class="boxColor">
-            <input type="submit" value="Customize Color" class="submitColor" >
-            </form>
-            <form id="leftFontColorForm">
+            <input type="submit" value="Customize Color" class="submitColor" id="leftColorForm" >
+            <!-- </form> -->
+            <!-- <form id="leftFontColorForm"> -->
                 <input type="text" value="" id="custFontColorLeft" class="boxColor">
-                <input type="submit" value="Customize Font Color" class="submitColor" >
-                </form>
+                <input type="submit" value="Customize Font Color" class="submitColor" id="leftFontColorForm" >
+                <!-- </form> -->
         </div>
         <div id='div4'>
-            <form id="rightColorForm">
+            <!-- <form id="rightColorForm"> -->
             <input type="text" value="" id="custColorRight" class="boxColor">
-            <input type="submit" value="Customize Color" class="submitColor" >
-            </form>
-            <form id="rightFontColorForm">
+            <input type="submit" value="Customize Color" class="submitColor" id="rightColorForm" >
+            <!-- </form> -->
+            <!-- <form id="rightFontColorForm"> -->
                 <input type="text" value="" id="custFontColorRight" class="boxColor">
-                <input type="submit" value="Customize Font Color" class="submitColor" >
-                </form>
+                <input type="submit" value="Customize Font Color" class="submitColor" id="rightFontColorForm" >
+                <!-- </form> -->
         </div>
         </div>
         <div id="defaultBtns">
             <button id="reset" class="colorBtn" >Reset</button>
-            <button id="hideBtns" class="colorBtn">Hide All Buttons to download</button>
+            <!-- <button id="hideBtns" class="colorBtn">Hide All Buttons to download</button> -->
         </div>
+    </fieldset>
+        </form>
     </div>
 
     <section class="container">

@@ -79,31 +79,31 @@ document.getElementById('changeFontColorRight').addEventListener('click', functi
 });
 
 //to get the input color value and assign it
-document.getElementById('leftColorForm').addEventListener('submit', function(){
+document.getElementById('leftColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('leftSection')[0].style.backgroundColor = document.getElementById('custColorLeft').value;
-  document.getElementById('leftColorForm').reset();
+  document.getElementById('custColorLeft').value='';
 });
 
 //to get the input color value and assign it
-document.getElementById('leftFontColorForm').addEventListener('submit', function(){
+document.getElementById('leftFontColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('leftSection')[0].style.color = document.getElementById('custFontColorLeft').value;
-  document.getElementById('leftFontColorForm').reset();
+  document.getElementById('custFontColorLeft').value='';
 });
 
 //to get the input color value and assign it
-document.getElementById('rightColorForm').addEventListener('submit', function(){
+document.getElementById('rightColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('rightSection')[0].style.backgroundColor = document.getElementById('custColorRight').value;
-  document.getElementById('rightColorForm').reset();
+  document.getElementById('custColorRight').value='';
 });
 
 //to get the input color value and assign it
-document.getElementById('rightFontColorForm').addEventListener('submit', function(){
+document.getElementById('rightFontColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('rightSection')[0].style.color = document.getElementById('custFontColorRight').value;
-  document.getElementById('rightFontColorForm').reset();
+  document.getElementById('custFontColorRight').value='';
 });
 
 
@@ -118,9 +118,9 @@ document.getElementById('reset').addEventListener('click' , function(){
 });
 
 //to hide all buttons by hidding the container div
-document.getElementById('hideBtns').addEventListener('click', function(){
-  document.getElementById('buttons').style.display = 'none';
-});
+// document.getElementById('hideBtns').addEventListener('click', function(){
+//   document.getElementById('buttons').style.display = 'none';
+// });
 
 // var doc = new jsPDF();
 // var specialElementHandlers = {
@@ -203,7 +203,7 @@ document.getElementsByClassName('imagePart')[0].addEventListener('mouseout', fun
   document.getElementById('userImg').style.display = 'block';
 });
 
-var loadFile = function(event) {
+let loadFile = function(event) {
   let image = document.getElementById('userImg');
   image.src = URL.createObjectURL(event.target.files[0]);
 };
