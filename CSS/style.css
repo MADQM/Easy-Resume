@@ -1,25 +1,36 @@
 
  .navbar {
   overflow: hidden;
-  background-color: rgb(2 2 2 / 21%);
+  background-color: rgb(2 2 2 / 55%);
   position: fixed;
   /* top: 0; */
   width: 99.4%;
-  height: auto;
+  height: 93px;
   /* border-bottom-style: ridge; */
   /* border-bottom-color: #fbc63c; */
   z-index: 9;
   margin: 0px;
   }
   
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 28px 66px;
+  header .navbar h1 {
+    display: inline-block;
+    /* position: relative;
+    right: 73%; */
+    margin-left:8%;
+    color:#ffffffa6;
+    font-size: 28px;
+
+}
+
+  header .navbar a {
+    /* float: left; */
+    display:inline-block;
+    color: #000000;
+    /* text-align: center; */
+    padding: 36px 50px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
+    margin-top:0;
   }
   
   .navbar a:hover {
@@ -35,16 +46,16 @@
  
   body > header > div > a:nth-child(2)
   {
-    float: left;
-    display: block;
+    /* float: left; */
+    /* display: block; */
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-left: 414px;
-    padding-right: 89px;
-    font-size: xx-large;
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
+    /* margin-left: 414px; */
+    /* padding-right: 89px; */
+    /* font-size: xx-large; */
   }
   body > header > div
   {
@@ -59,41 +70,41 @@
     
   body > header > div > a:nth-child(3)
   {
-    float: left;
-    display: block;
+    /* float: left; */
+    /* display: block; */
     color: #020202;
-    text-align: center;
+    /* text-align: center; */
     /* padding: 28px 75px; */
-    text-decoration: none;
-    font-size: 17px;
+    /* text-decoration: none; */
+    /* font-size: 17px; */
     /* margin-right: 128px; */
-    font-size: xx-large;
+    /* font-size: xx-large; */
   }
   body > header > div > a.nav3
   {
-    float: left;
-    display: block;
+    /* float: left; */
+    /* display: block; */
     color: #000000;
-    text-align: center;
+    /* text-align: center; */
     /* padding: 14px 16px; */
     text-decoration: none;
-    font-size: xx-large;
+    /* font-size: xx-large; */
   }
   body > header > div > a.nav1
   {
-    float: left;
-    display: block;
+    /* float: left; */
+    /* display: block; */
     color: #060606;
-    text-align: center;
-    padding: 28px 66px;
-    text-decoration: none;
-    font-size: 17px;
+    /* text-align: center; */
+    /* padding: 28px 66px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
     /* padding-right: 89px; */
     /* margin-left: 427px; */
-    border-right-width: 20px;
+    /* border-right-width: 20px; */
     /* margin-right: 46px; */
-    font-size: xx-large;
-    margin-left: 38%;
+    /* font-size: xx-large; */
+    margin-left: 25%;
   }
 
   main
@@ -186,7 +197,7 @@
     /* display: block; */
     height: 65vh;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 15%;
   }
   body > main > section.overflow > div.img.aos-init.aos-animate
   {
@@ -199,7 +210,7 @@
     vertical-align: baseline;
     pointer-events: auto;
     width: 30%;
-    margin-top: 50px;
+    margin-top: 10%;
     float: left;
     transition-timing-function: ease;
     transition-duration: 2s;
@@ -235,7 +246,7 @@
     width: 30%;
     float: right;
     margin-right: 15%;
-    margin-top: 50px;
+    margin-top: 10%;
     transition-timing-function: ease;
     transition-duration: 2s;
     transition-property: opacity,transform,-webkit-transform;
@@ -346,19 +357,19 @@
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgb(2 2 2 / 73%);
-    color: white;
-    font-size: 16px;
-    padding: 20px 73px;
+    background-color: rgba(2, 2, 2, 0.73);
+    color: #eababa;
+    font-size: 23px;
+    padding: 20px 40px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 42px;
     text-align: center;
   }
   
   .container .btn:hover {
-    background-color: black;
+    background-color:rgb(2 2 2 / 55%);
+    color:black;
   }
   body > footer > section
   {
@@ -468,7 +479,7 @@ body > main > section.us > img
 body > main > form
 {
   color: #001f3f;
-  margin-top: 93px;
+  margin-top: 16%;
 }
 
 
@@ -494,4 +505,11 @@ body > main > form
   height:150px;
   display: inline-block;
   border-radius: 100px;
+}
+
+
+
+.navbar h1
+{
+  display: inline;
 }
