@@ -37,7 +37,7 @@
 
 * To maximize the group score was for each person to sacrifice an item he really wanted for something the team needed.
  
-
+* Any time you want to push your branch pull the main to be sure that all updated.
 
 ### Work Plan    
 
