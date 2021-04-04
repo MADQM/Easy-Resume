@@ -7,7 +7,12 @@ function loadCart() {
 }
 
 loadCart();
+console.log(edu.getname().firstName);
+console.log(edu.getname().lastName);
+console.log(edu.getname().bDate);
+console.log(edu.getname().telephonePersonal);
 console.log(edu.getname().eMail);
+console.log(edu.getname().locAddress);
 
 // Personality.all=edu;
  
