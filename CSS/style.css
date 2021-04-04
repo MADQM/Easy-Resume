@@ -7,6 +7,7 @@
     width: 100%;
     border-bottom-style: ridge;
     border-bottom-color:#fbc63c;
+    z-index: 9;
   }
   
   .navbar a {
@@ -446,6 +447,7 @@ body > main > section.us > img
     width: 149px;
     margin-top: 0px;
     margin-bottom: 76px;
+    
 }
 /* formPage */
 
