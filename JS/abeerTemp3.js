@@ -65,3 +65,16 @@ document.getElementById('tiJob2').innerHTML= newexp.tiJob;
 document.getElementById('orgName').innerHTML= newexp.orgName;
 document.getElementById('starAtt').innerHTML= newexp.starAt + ' to ' + newexp.finishAt;
 
+
+// for(let i=0; i< Skills.skillName.length; i++){
+//   if (i=>3)
+//     break;
+//   const skillId = `skill${i+1}`;
+//   const skillplaceId =`skillPlace${i+1}`;
+//   const smilldateId = `skillDate${i+1}`;
+//   document.getElementById('skillId').innerHTML= skills.skillName[i];
+//   document.getElementById('skillplaceId').innerHTML= skills.placeOfLearning[i];
+//   document.getElementById('smilldateId').innerHTML= skills.starAt[i] + ' to ' + skills.finishAt[i];
+
+
+// }
