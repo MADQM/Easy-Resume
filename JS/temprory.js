@@ -4,6 +4,10 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
   this.unMajor= unMajor;
   this.yearOfGraduate=yearOfGraduate;
   this.unDegree=unDegree;
+  this.getEduname = function()
+  {
+    return this.unName;
+  };
   this.headerRander = function()
   {
 
@@ -30,18 +34,22 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
 
 
 
+      // if (eduDetails[i].length === 1)
 
       tableRow2.appendChild(tableData1);
       tableData1.textContent=eduDetails[i];
+      console.log(eduDetails[i]);
+
+
+
+
+
 
     }
 
 
 
   };
-
-
-
 }
 ///////////////////////////////////////////
 
@@ -55,18 +63,18 @@ function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddres
   this.locAddress=locAddress;
 
 
-//   this.settingInfo = function (key , item)
-//   {
-//     let data= JSON.stringify(key ,item);
-//     localStorage.setItem(key,data);
-//   };
-//   Personality.settingInfo('firstName',this.firstName);
-//   Personality.settingInfo('lastName',this.lastName);
-//   Personality.settingInfo('bDate',this.bDate);
-//   Personality.settingInfo('telephonePersonal',this.telephonePersonal);
-//   Personality.settingInfo('eMail',this.eMail);
-//   Personality.settingInfo('locAddress',this.locAddress);
-  Personality.all.push(this);
+  //   this.settingInfo = function (key , item)
+  //   {
+  //     let data= JSON.stringify(key ,item);
+  //     localStorage.setItem(key,data);
+  //   };
+  //   Personality.settingInfo('firstName',this.firstName);
+  //   Personality.settingInfo('lastName',this.lastName);
+  //   Personality.settingInfo('bDate',this.bDate);
+  //   Personality.settingInfo('telephonePersonal',this.telephonePersonal);
+  //   Personality.settingInfo('eMail',this.eMail);
+  //   Personality.settingInfo('locAddress',this.locAddress);
+  // Personality.all.push(this);
   this.getname = function()
   {
     return this.firstName;
@@ -76,9 +84,9 @@ function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddres
   //       return this.lastName;
   //   }
 
-// this.all.push(this);
+  // this.all.push(this);
 }
-Personality.all=[];
+// Personality.all=[];
 //////////////////////////////////////////////////
 function Experiance (tiJob,orgName,starAt,finishAt)
 {
@@ -86,7 +94,7 @@ function Experiance (tiJob,orgName,starAt,finishAt)
   this.orgName= orgName;
   this.starAt=starAt;
   this.finishAt=finishAt;
-  this.getname = function()
+  this.getExpname = function()
   {
     return this.tiJob;
   };
@@ -129,9 +137,9 @@ function Skills (skillName,placeOfLearning,starAt,finishAt)
   this.placeOfLearning= placeOfLearning;
   this.starAt=starAt;
   this.finishAt=finishAt;
-  this.getname = function()
+  this.getSkillname = function()
   {
-    return this.tiJob;
+    return this.skillName;
   };
   this.headerRander = function()
   {
@@ -171,9 +179,9 @@ function Language (langSelected,rateLanguage)
 {
   this.langSelected = langSelected;
   this.rateLanguage= rateLanguage;
-  this.getname = function()
+  this.getLangname = function()
   {
-    return this.tiJob;
+    return this.langSelected;
   };
   this.headerRander = function()
   {
@@ -207,3 +215,4 @@ function Language (langSelected,rateLanguage)
 
   };
 }
+

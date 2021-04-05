@@ -72,6 +72,11 @@ function table()
 let myEduForm = document.getElementById('eduForm');
 let formEduSection = document.getElementById('formEduSection');
 let counterClick = 0;
+let unName = [];
+let unMajor = [];
+let yearOfGraduate = [];
+let unDegree = [];
+
 myEduForm.addEventListener('submit',addNewEducation);
 
 function addNewEducation(event)
@@ -83,10 +88,10 @@ function addNewEducation(event)
   if(counterClick<=1){
     table();
   }
-  let unName = event.target.unvName.value;
-  let unMajor = event.target.unMajor.value;
-  let yearOfGraduate = event.target.yearOfGraduate.value;
-  let unDegree = event.target.unDegree.value;
+  unName.push( event.target.unvName.value);
+  unMajor.push( event.target.unMajor.value);
+  yearOfGraduate.push( event.target.yearOfGraduate.value);
+  unDegree.push( event.target.unDegree.value);
 
 
   const newEducation = new Education (unName,unMajor,yearOfGraduate,unDegree);
