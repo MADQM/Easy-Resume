@@ -77,6 +77,7 @@ document.getElementById('changeColorRight').addEventListener('click', function()
 
 //to check if the user clicked the change font color button for the right section, so it will change the color
 document.getElementById('changeFontColorRight').addEventListener('click', function(){
+  event.preventDefault();
   colorIndex = randomNumber(0, colors.length - 0.5) ;
   document.getElementsByClassName('rightSection')[0].style.color = colors[colorIndex];
 });
@@ -119,6 +120,54 @@ document.getElementById('reset').addEventListener('click' , function(){
 
 
 });
+
+
+// window.onload = function () {
+//   document.getElementById('download').addEventListener('click', () => {
+//     event.preventDefault();
+//     const downloadPdf = this.document.getElementsByClassName('container')[0];
+//     console.log(downloadPdf);
+//     console.log(window);
+//     let opt = {
+//       margin:.2,
+//       filename: 'myfile.pdf',
+//       image: { type: 'jpeg', quality: 0.98 },
+//       html2canvas: { scale: 1 },
+//       jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+//     };
+//     html2pdf().from(downloadPdf).set(opt).save();
+//   });
+// };
+
+
+////(unName,unMajor,yearOfGraduate,unDegree)
+
+// console.log(JSON.parse(localStorage.getItem('Education')).unName);
+
+////get the data from the form and put it into the resume
+
+let personalInfo = JSON.parse(localStorage.getItem('personality'));
+let education    = JSON.parse(localStorage.getItem('Education'));
+let languages     = JSON.parse(localStorage.getItem('Language'));
+let experience   = JSON.parse(localStorage.getItem('Experiance'));
+let skills       = JSON.parse(localStorage.getItem('Skills'));
+
+document.getElementById('userName').innerHTML = personalInfo.firstName +' ' + personalInfo.lastName ;
+document.getElementById('userTitle').innerHTML = experience.tiJob;
+//for contacts
+document.getElementById('email').innerHTML = personalInfo.eMail;
+document.getElementById('phone').innerHTML = personalInfo.telephonePersonal; //locAddress
+document.getElementById('address').innerHTML = personalInfo.locAddress; //skillName
+//for skills
+document.getElementById('skill1').innerHTML = skills.skillName; //
+//for education
+document.getElementById('major1').innerHTML = education.unMajor;
+document.getElementById('study1').innerHTML = education.unName + ' graduated at ' + education.yearOfGraduate;
+//for experience
+document.getElementById('exp1').innerHTML = experience.tiJob + ' ' + experience.orgName + ' ' + experience.starAt + ' ' + experience.finishAt ;
+document.getElementById('lang1').innerHTML = languages.langSelected ;
+document.getElementById('lang1Level').innerHTML = languages.rateLanguage ;
+
 
 //to hide all buttons by hidding the container div
 // document.getElementById('hideBtns').addEventListener('click', function(){

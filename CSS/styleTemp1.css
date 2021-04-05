@@ -320,14 +320,14 @@ fieldset legend
     margin-right:auto;
     height:auto;
     margin-top:3%;
-    
 }
 /* Style of the left section */
 .leftSection
 {
     display:inline-block;
     width:40%;
-    min-height:1350px;
+    min-height:1350px;   
+    height: 1000px;
     background-color:#FCB11C;
     float:left;
     box-shadow: 28px 0px #000000;
