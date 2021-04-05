@@ -48,7 +48,7 @@ function randomNumber(min, max)
   for(;;) //to loop untill the random number became not the same as the previous
   {
     random = Math.floor(Math.random()*(max-min)+min);
-    if(colorIndex !=random ) //check if is it the same as the previous
+    if(colorIndex !==random ) //check if is it the same as the previous
       return random ;
   }
 }
@@ -56,18 +56,21 @@ function randomNumber(min, max)
 
 //to check if the user clicked the change color button for the left section , so it will change the color
 document.getElementById('changeColorLeft').addEventListener('click', function(){
+  event.preventDefault();
   colorIndex = randomNumber(0, colors.length - 0.5) ;
   document.getElementsByClassName('leftSection')[0].style.backgroundColor = colors[colorIndex];
 });
 
 //to check if the user clicked the change font color button for the left section , so it will change the color
 document.getElementById('changeFontColorLeft').addEventListener('click', function(){
+  event.preventDefault();
   colorIndex = randomNumber(0, colors.length - 0.5) ;
   document.getElementsByClassName('leftSection')[0].style.color = colors[colorIndex];
 });
 
 //to check if the user clicked the change color button for the right section, so it will change the color
 document.getElementById('changeColorRight').addEventListener('click', function(){
+  event.preventDefault();
   colorIndex = randomNumber(0, colors.length - 0.5) ;
   document.getElementsByClassName('rightSection')[0].style.backgroundColor = colors[colorIndex];
 });
