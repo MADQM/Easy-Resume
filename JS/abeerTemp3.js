@@ -4,7 +4,7 @@
 
 
 
-let newinfo = JSON.parse(localStorage.getItem('personality'));
+let newwinfo = JSON.parse(localStorage.getItem('personality'));
 let newedu = JSON.parse(localStorage.getItem('Education'));
 let newexp = JSON.parse(localStorage.getItem('Experiance'));
 let newskill = JSON.parse(localStorage.getItem('Skills'));
@@ -17,17 +17,15 @@ let newlang = JSON.parse(localStorage.getItem('Language'));
 
 
 
-document.getElementsb('name').innerHTML= newinfo.firstName + ' '+ newinfo.lastName;
-document.getElementsb('name1').innerHTML= newinfo.firstName + ' '+ newinfo.lastName;
-document.getElementsb('name2').innerHTML= newinfo.firstName + ' '+ newinfo.lastName;
-document.getElementsb('name3').innerHTML= newinfo.firstName + ' '+ newinfo.lastName;
+document.getElementById('name').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
+document.getElementById('name1').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
+document.getElementById('name2').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
+document.getElementById('name3').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
 
-document.getElementById('email').innerHTML= newinfo.eMail;
-document.getElementById('bod').innerHTML= newinfo.bDate;
-document.getElementById('location').innerHTML= newinfo.locAddress;
-document.getElementById('phone').innerHTML= newinfo.telephonePersonal;
-
-
+document.getElementById('email').innerHTML= newwinfo.eMail;
+document.getElementById('bod').innerHTML= newwinfo.bDate;
+document.getElementById('location').innerHTML= newwinfo.locAddress;
+document.getElementById('phone').innerHTML= newwinfo.telephonePersonal;
 
 
 
@@ -36,7 +34,9 @@ document.getElementById('phone').innerHTML= newinfo.telephonePersonal;
 
 
 
-document.getElementsb('unName').innerHTML= newedu.unName;
+
+
+document.getElementById('unName').innerHTML= newedu.unName;
 document.getElementById('unMajor').innerHTML= newedu.unMajor;
 
 
