@@ -69,7 +69,7 @@ function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddres
   Personality.all.push(this);
   this.getname = function()
   {
-    return firstName;
+    return this.firstName;
   };
   //   this.getlastName = function ()
   //   {
@@ -86,6 +86,10 @@ function Experiance (tiJob,orgName,starAt,finishAt)
   this.orgName= orgName;
   this.starAt=starAt;
   this.finishAt=finishAt;
+  this.getname = function()
+  {
+    return this.tiJob;
+  };
   this.headerRander = function()
   {
 
@@ -125,6 +129,10 @@ function Skills (skillName,placeOfLearning,starAt,finishAt)
   this.placeOfLearning= placeOfLearning;
   this.starAt=starAt;
   this.finishAt=finishAt;
+  this.getname = function()
+  {
+    return this.tiJob;
+  };
   this.headerRander = function()
   {
 
@@ -163,7 +171,10 @@ function Language (langSelected,rateLanguage)
 {
   this.langSelected = langSelected;
   this.rateLanguage= rateLanguage;
-
+  this.getname = function()
+  {
+    return this.tiJob;
+  };
   this.headerRander = function()
   {
 
