@@ -74,6 +74,7 @@ let formEduSection = document.getElementById('formEduSection');
 let counterClick = 0;
 myEduForm.addEventListener('submit',addNewEducation);
 
+
 function addNewEducation(event)
 {
 
