@@ -4,48 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png">
     <link rel="stylesheet" href="./CSS/styleTemp1.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-    <title>Template 1</title>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+    <title>Template</title>
 </head>
-<body>
+<body id="download">
+    <header>
+            
+                
+        <div class="navbar">
+            <img id="logo" src="https://image.flaticon.com/icons/png/128/2427/2427466.png" alt="logo"/>
+            <h1>Easy Resume</h1>
+            <a  class="nav1" href="index.html">Home</a>
+            <a  class="nav2" href="indexawr1.html">Templates</a>
+            <a  class="nav3" href="#contact">About us</a>
+          </div>
+    
+
+        
+       
+    
+    </header>
     <div id="buttons">
+        <form >
+            <fieldset><legend>Customize Colors</legend>
         <div id="div1">
-            <button id="changeColorLeft" class="colorBtn">Change Color Randomly</button>
-            <button id="changeFontColorLeft" class="colorBtn">Change Font Color Randomly</button>
-        </div> 
+           <label>Change Left Side Background Color :&emsp; &emsp;</label> <button id="changeColorLeft" class="colorBtn">Change</button><br><br>
+           <label class="labelColor">Change Left Side Color Font : &emsp;&emsp;&emsp;&emsp;&emsp;</label><button id="changeFontColorLeft" class="colorBtn">Change</button>
+        </div> <br>
         <div id="div2">
-            <button id="changeColorRight" class="colorBtn">Change Color Randomly</button>
-            <button id="changeFontColorRight" class="colorBtn">Change Font Color Randomly</button>
+            <label>Change Right Side Background Color : &emsp;</label> <button id="changeColorRight" class="colorBtn">Change</button><br><br>
+            <label class="labelColor">Change Right Side Color Font :&emsp; &emsp;&emsp;&emsp;</label><button id="changeFontColorRight" class="colorBtn">Change</button>
         </div>
 
         <div id="btnColorContainer" >
         <div id='div3'>
-            <form id="leftColorForm">
+            <!-- <form id="leftColorForm"> -->
             <input type="text" value="" id="custColorLeft" class="boxColor">
-            <input type="submit" value="Customize Color" class="submitColor" >
-            </form>
-            <form id="leftFontColorForm">
+            <input type="submit" value="Customize Color" class="submitColor" id="leftColorForm" >
+            <!-- </form> -->
+            <!-- <form id="leftFontColorForm"> -->
                 <input type="text" value="" id="custFontColorLeft" class="boxColor">
-                <input type="submit" value="Customize Font Color" class="submitColor" >
-                </form>
+                <input type="submit" value="Customize Font Color" class="submitColor" id="leftFontColorForm" >
+                <!-- </form> -->
         </div>
         <div id='div4'>
-            <form id="rightColorForm">
+            <!-- <form id="rightColorForm"> -->
             <input type="text" value="" id="custColorRight" class="boxColor">
-            <input type="submit" value="Customize Color" class="submitColor" >
-            </form>
-            <form id="rightFontColorForm">
+            <input type="submit" value="Customize Color" class="submitColor" id="rightColorForm" >
+            <!-- </form> -->
+            <!-- <form id="rightFontColorForm"> -->
                 <input type="text" value="" id="custFontColorRight" class="boxColor">
-                <input type="submit" value="Customize Font Color" class="submitColor" >
-                </form>
+                <input type="submit" value="Customize Font Color" class="submitColor" id="rightFontColorForm" >
+                <!-- </form> -->
         </div>
         </div>
         <div id="defaultBtns">
             <button id="reset" class="colorBtn" >Reset</button>
-            <button id="hideBtns" class="colorBtn">Hide All Buttons to download</button>
+            <!-- <button id="hideBtns" class="colorBtn">Hide All Buttons to download</button> -->
         </div>
+    </fieldset>
+        </form>
     </div>
 
     <section class="container">
@@ -138,6 +162,52 @@
         </section>
 
     </section>
+
+
+    <!-- <main>
+        <section class="hero2">
+
+            <div class="text-wrapper">
+                <h1 class="headline">Our Team </h1>
+               
+            </div>
+        </section>
+        <section class="us">
+            <ul>
+                <li><img src="/Images/MR.ashqar.jpg" alt="Mahmood Alashqar"  /></li>
+                <li><img src="/Images/Barqawi.jpg" alt="Mohammad Barqawi"  /></li>
+                <li><img src="/Images/Qusai.jpg" alt="Qusai Al-amart"  /></li>
+                <li><img src="/Images/Abeer.jpg" alt="Abeer Al-Rafati"  /></li>
+                <li><img src="/Images/Dania.jpg" alt="Dania abughoush"  /></li>
+            </ul>
+    </main> -->
+
+    <!-- <footer>
+        <section class="site-info">
+            <h4 class="site-copyright">
+                
+            </footer><ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+            
+        &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<img class="SEEDS" &nbsp;src="https://www.design-seeds.com/wp-content/uploads/2017/10/SEEDS-e1508710555140.png">  Design MADQM®  are registered trademarks of MADQM Design Consultancy LLC, all rights reserved | © 2009-2021 MADQM Design Consultancy LLC
+            </h4>
+            
+        
+        
+        
+        
+        </section>
+    </footer> -->
+    <!-- <div id="print">
+        <h3>Welcome To Veewom</h3>
+        <p>This is a Sample Pararaph</p>
+   </div>
+   <div id="print-btn"></div>
+   <button id="submit">Download PDF File</button> -->
+
     
     <script src="JS/temp1.js"></script>
 </body>
