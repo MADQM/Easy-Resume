@@ -79,6 +79,7 @@ let unDegree = [];
 
 myEduForm.addEventListener('submit',addNewEducation);
 
+
 function addNewEducation(event)
 {
 

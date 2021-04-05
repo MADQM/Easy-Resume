@@ -163,16 +163,10 @@ function showSkillsInformation ()
 
 
 }
-function showLanguageInformation()
-{
- 
 
-
- 
-}
 
 showPersonalityInformation ();
 showEducationalInformation();
 showExperianceInformation ();
 showSkillsInformation ();
-showLanguageInformation();
+

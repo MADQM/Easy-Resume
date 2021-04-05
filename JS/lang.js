@@ -67,8 +67,10 @@ function table()
   tableHeader2.textContent='Rate';
 
 }
+
 let langSelected = [];
 let rateLanguage =[];
+
 let myForm = document.getElementById('langForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
@@ -90,6 +92,9 @@ function addNewLanguage(event)
 
 
   const newLanguage = new Language (langSelected,rateLanguage);
+
+
+  
   newLanguage.headerRander();
   //   newEducation.render();
 
