@@ -84,6 +84,7 @@ main
 .row {
     display: flex;
     margin: 100px;
+   
 
    
   }
@@ -115,10 +116,11 @@ main
 
   .column {
     flex: 33.33%;
+    border: 1px solid rgb(200, 171, 226);
  
   }
 
-
+  
 
 
   @-webkit-keyframes swing
