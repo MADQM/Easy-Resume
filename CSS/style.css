@@ -216,7 +216,7 @@
     margin-top: 10%;
     float: left;
     transition-timing-function: ease;
-    transition-duration: 2s;
+    transition-duration: 4s;
     transition-property: opacity,transform,-webkit-transform;
     transition-delay: .1s;
     opacity: 1;
@@ -251,7 +251,7 @@
     margin-right: 15%;
     margin-top: 10%;
     transition-timing-function: ease;
-    transition-duration: 2s;
+    transition-duration: 4s;
     transition-property: opacity,transform,-webkit-transform;
     transition-delay: .1s;
     opacity: 1;
@@ -361,7 +361,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(2, 2, 2, 0.73);
-    color: #eababa;
+    color: #ffffffa6;
     font-size: 23px;
     padding: 20px 40px;
     border: none;
@@ -515,4 +515,12 @@ body > main > form
 .navbar h1
 {
   display: inline;
+}
+
+
+
+
+.us ul li:hover
+{
+
 }
