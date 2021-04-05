@@ -37,7 +37,7 @@ tabelElement.addEventListener('click', removeItemFromCart);
 
 //   };
 // }
-
+let counterConfirm = 0;
 function removeItemFromCart(event)
 {
   tabelElement.deleteRow(1);
@@ -94,7 +94,7 @@ function addNewLanguage(event)
   const newLanguage = new Language (langSelected,rateLanguage);
 
 
-  
+
   newLanguage.headerRander();
   //   newEducation.render();
 
@@ -103,13 +103,16 @@ function addNewLanguage(event)
   confirmWarning.addEventListener('submit',warningConfirm);
   function warningConfirm()
   {
-
-    let confirmm = confirm('Are You Sure ?');
-    if (confirmm === true) {
-      { let data= JSON.stringify(newLanguage);
-        localStorage.setItem('Language',data);}
-    } else {
-      alert('please reconsidering your inputs');
+    counterConfirm++;
+    if(counterConfirm === 1 )
+    {
+      let confirmm = confirm('Are You Sure ?');
+      if (confirmm === true) {
+        { let data= JSON.stringify(newLanguage);
+          localStorage.setItem('Language',data);}
+      } else {
+        alert('please reconsidering your inputs');
+      }
     }
   }
 

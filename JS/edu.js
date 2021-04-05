@@ -43,7 +43,7 @@ const section = document.getElementById('formEduSection');
 const articleElement = document.createElement('article');
 section.appendChild(articleElement);
 
-
+let counterConfirm = 0;
 
 function table()
 {
@@ -104,13 +104,16 @@ function addNewEducation(event)
   confirmEduWarning.addEventListener('submit',warningEduConfirm);
   function warningEduConfirm()
   {
-
-    let confirmm = confirm('Are You Sure ?');
-    if (confirmm === true) {
-      { let data= JSON.stringify(newEducation);
-        localStorage.setItem('Education',data);}
-    } else {
-      alert('please reconsidering your inputs');
+    counterConfirm++;
+    if(counterConfirm === 1 )
+    {
+      let confirmm = confirm('Are You Sure ?');
+      if (confirmm === true) {
+        { let data= JSON.stringify(newEducation);
+          localStorage.setItem('Education',data);}
+      } else {
+        alert('please reconsidering your inputs');
+      }
     }
   }
 }
