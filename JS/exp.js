@@ -77,6 +77,11 @@ function table()
 let myForm = document.getElementById('expForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
+let tiJob =[];
+let orgName = [];
+let starAt =[];
+let finishAt =[];
+
 myForm.addEventListener('submit',addNewExperiance);
 
 function addNewExperiance(event)
@@ -88,10 +93,10 @@ function addNewExperiance(event)
   if(counterClick<=1){
     table();
   }
-  let tiJob = event.target.tiJob.value;
-  let orgName = event.target.orgName.value;
-  let starAt = event.target.starAt.value;
-  let finishAt = event.target.finishAt.value;
+  tiJob.push(event.target.tiJob.value);
+  orgName.push(event.target.orgName.value);
+  starAt.push(event.target.starAt.value);
+  finishAt.push(event.target.finishAt.value);
 
 
   const newExperiance = new Experiance (tiJob,orgName,starAt,finishAt);

@@ -67,6 +67,10 @@ function table()
   tableHeader2.textContent='Rate';
 
 }
+
+let langSelected = [];
+let rateLanguage =[];
+
 let myForm = document.getElementById('langForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
@@ -82,12 +86,15 @@ function addNewLanguage(event)
   if(counterClick<=1){
     table();
   }
-  let langSelected = event.target.langSelected.value;
-  let rateLanguage = event.target.rateLanguage.value;
+  langSelected.push(event.target.langSelected.value);
+  rateLanguage.push(event.target.rateLanguage.value);
 
 
 
   const newLanguage = new Language (langSelected,rateLanguage);
+
+
+  
   newLanguage.headerRander();
   //   newEducation.render();
 

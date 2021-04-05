@@ -158,15 +158,43 @@ document.getElementById('userTitle').innerHTML = experience.tiJob;
 document.getElementById('email').innerHTML = personalInfo.eMail;
 document.getElementById('phone').innerHTML = personalInfo.telephonePersonal; //locAddress
 document.getElementById('address').innerHTML = personalInfo.locAddress; //skillName
-//for skills
-document.getElementById('skill1').innerHTML = skills.skillName; //
-//for education
-document.getElementById('major1').innerHTML = education.unMajor;
-document.getElementById('study1').innerHTML = education.unName + ' graduated at ' + education.yearOfGraduate;
-//for experience
-document.getElementById('exp1').innerHTML = experience.tiJob + ' ' + experience.orgName + ' ' + experience.starAt + ' ' + experience.finishAt ;
-document.getElementById('lang1').innerHTML = languages.langSelected ;
-document.getElementById('lang1Level').innerHTML = languages.rateLanguage ;
+
+//for skills , we use loop becasue may we have more than one skill
+for(let i = 0 ; i < skills.skillName.length ; i++)
+{
+  if(i > 3 ) //the number of skills I have in the template right now , we can change it later
+    break;
+  const id = `skill${i+1}` ;
+  document.getElementById(id).innerHTML = skills.skillName[i];
+}
+//for education , we use loop becasue may we have more than education
+for(let i = 0 ; i < education.unMajor.length ; i++)
+{
+  if(i > 3 ) //the number of majors I have in the template right now , we can change it later
+    break;
+  const majorId = `major${i+1}` ;
+  const studyId = `study${i+1}` ;
+  document.getElementById(majorId).innerHTML = education.unMajor[i];
+  document.getElementById(studyId).innerHTML = education.unName[i] + ' graduated at ' + education.yearOfGraduate[i];
+}
+//for experience , we use loop becasue may we have more than one experience
+for(let i = 0 ; i < experience.tiJob.length ; i++ )
+{
+  if(i > 3 ) //the number of experiences I have in the template right now , we can change it later
+    break;
+  const expId = `exp${i+1}` ;
+  document.getElementById(expId).innerHTML = experience.tiJob[i] + ' ' + experience.orgName[i] + ' ' + experience.starAt[i] + ' ' + experience.finishAt[i] ;
+}
+
+for(let i = 0 ; i < languages.langSelected.length ; i++)
+{
+  if(i > 3 ) //the number of languages I have in the template right now , we can change it later
+    break;
+  const langId = `lang${i+1}`;
+  const langLevelId = `lang${i+1}Level`;
+  document.getElementById(langId).innerHTML = languages.langSelected[i] ;
+  document.getElementById(langLevelId).innerHTML = languages.rateLanguage[i] ;
+}
 
 
 //to hide all buttons by hidding the container div

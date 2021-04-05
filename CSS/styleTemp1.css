@@ -624,10 +624,16 @@ input
 {
     display: inline-block;
     margin: 0;
-    width:7vw;
+    width:3vw;
     border-radius: 10px;
     margin-left:9%;
+    height: 20px;
 
+}
+
+.boxColor:hover
+{
+    cursor: pointer;
 }
 
 .submitColor
