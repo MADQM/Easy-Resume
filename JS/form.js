@@ -22,7 +22,7 @@
 
 
 // }
-Personality.all=[];
+// Personality.all=[];
 
 
 
