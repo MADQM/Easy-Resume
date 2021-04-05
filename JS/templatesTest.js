@@ -17,3 +17,5 @@ console.log(edu.getname().locAddress);
 // Personality.all=edu;
  
 // console.log(Personality.all[firstName]);
+
+
