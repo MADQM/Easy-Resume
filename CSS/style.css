@@ -579,3 +579,30 @@ input:hover
 {
 
 }
+
+
+
+button#chooseTemp a
+{
+  text-decoration: none;
+  color: #000000;
+}
+
+#chooseTemp
+{
+  margin-left: 10%;
+}
+
+button[type="submit"]
+{
+  margin-left: 15%;
+}
+
+
+
+
+
+
+
+
+

@@ -37,7 +37,6 @@ myForm.addEventListener('submit', holdInformation);
 
 function holdInformation(event)
 {
-
   event.preventDefault();
   //   console.log(event.target.fName.value);
   //
@@ -54,7 +53,7 @@ function holdInformation(event)
 
 
 
-
+alert('your information was successfully added');
 
 
 
