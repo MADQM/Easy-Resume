@@ -37,7 +37,7 @@ tabelElement.addEventListener('click', removeItemFromCart);
 
 //   };
 // }
-
+let counterConfirm = 0;
 function removeItemFromCart(event)
 {
   tabelElement.deleteRow(1);
@@ -67,6 +67,10 @@ function table()
   tableHeader2.textContent='Rate';
 
 }
+
+let langSelected = [];
+let rateLanguage =[];
+
 let myForm = document.getElementById('langForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
@@ -82,28 +86,35 @@ function addNewLanguage(event)
   if(counterClick<=1){
     table();
   }
-  let langSelected = event.target.langSelected.value;
-  let rateLanguage = event.target.rateLanguage.value;
+  langSelected.push(event.target.langSelected.value);
+  rateLanguage.push(event.target.rateLanguage.value);
 
 
 
   const newLanguage = new Language (langSelected,rateLanguage);
+
+
+
   newLanguage.headerRander();
   //   newEducation.render();
-
+  myForm.reset();
   let confirmWarning = document.getElementById('connfirm');
   let connnfirm = document.getElementById('connnfirm');
   confirmWarning.addEventListener('submit',warningConfirm);
   function warningConfirm()
   {
-
-    let confirmm = confirm('Are You Sure ?');
-    if (confirmm === true) {
-      { let data= JSON.stringify(newLanguage);
-        localStorage.setItem('Language',data);}
-    } else {
-      alert('please reconsidering your inputs');
+    counterConfirm++;
+    if(counterConfirm === 1 )
+    {
+      let confirmm = confirm('Are You Sure ?');
+      if (confirmm === true) {
+        { let data= JSON.stringify(newLanguage);
+          localStorage.setItem('Language',data);}
+      } else {
+        alert('please reconsidering your inputs');
+      }
     }
+    
   }
 
 }

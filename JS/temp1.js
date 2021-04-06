@@ -77,6 +77,7 @@ document.getElementById('changeColorRight').addEventListener('click', function()
 
 //to check if the user clicked the change font color button for the right section, so it will change the color
 document.getElementById('changeFontColorRight').addEventListener('click', function(){
+  event.preventDefault();
   colorIndex = randomNumber(0, colors.length - 0.5) ;
   document.getElementsByClassName('rightSection')[0].style.color = colors[colorIndex];
 });
@@ -119,6 +120,83 @@ document.getElementById('reset').addEventListener('click' , function(){
 
 
 });
+
+
+// window.onload = function () {
+//   document.getElementById('download').addEventListener('click', () => {
+//     event.preventDefault();
+//     const downloadPdf = this.document.getElementsByClassName('container')[0];
+//     console.log(downloadPdf);
+//     console.log(window);
+//     let opt = {
+//       margin:.2,
+//       filename: 'myfile.pdf',
+//       image: { type: 'jpeg', quality: 0.98 },
+//       html2canvas: { scale: 1 },
+//       jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+//     };
+//     html2pdf().from(downloadPdf).set(opt).save();
+//   });
+// };
+
+
+////(unName,unMajor,yearOfGraduate,unDegree)
+
+// console.log(JSON.parse(localStorage.getItem('Education')).unName);
+
+////get the data from the form and put it into the resume
+
+let personalInfo = JSON.parse(localStorage.getItem('personality'));
+let education    = JSON.parse(localStorage.getItem('Education'));
+let languages     = JSON.parse(localStorage.getItem('Language'));
+let experience   = JSON.parse(localStorage.getItem('Experiance'));
+let skills       = JSON.parse(localStorage.getItem('Skills'));
+
+document.getElementById('userName').innerHTML = personalInfo.firstName +' ' + personalInfo.lastName ;
+document.getElementById('bio').innerHTML = personalInfo.bioInfo ;
+document.getElementById('userTitle').innerHTML = experience.tiJob;
+//for contacts
+document.getElementById('email').innerHTML = personalInfo.eMail;
+document.getElementById('phone').innerHTML = personalInfo.telephonePersonal; //locAddress
+document.getElementById('address').innerHTML = personalInfo.locAddress; //skillName
+
+//for skills , we use loop becasue may we have more than one skill
+for(let i = 0 ; i < skills.skillName.length ; i++)
+{
+  if(i > 3 ) //the number of skills I have in the template right now , we can change it later
+    break;
+  const id = `skill${i+1}` ;
+  document.getElementById(id).innerHTML = skills.skillName[i];
+}
+//for education , we use loop becasue may we have more than education
+for(let i = 0 ; i < education.unMajor.length ; i++)
+{
+  if(i > 3 ) //the number of majors I have in the template right now , we can change it later
+    break;
+  const majorId = `major${i+1}` ;
+  const studyId = `study${i+1}` ;
+  document.getElementById(majorId).innerHTML = education.unMajor[i];
+  document.getElementById(studyId).innerHTML = education.unName[i] + ' graduated at ' + education.yearOfGraduate[i];
+}
+//for experience , we use loop becasue may we have more than one experience
+for(let i = 0 ; i < experience.tiJob.length ; i++ )
+{
+  if(i > 3 ) //the number of experiences I have in the template right now , we can change it later
+    break;
+  const expId = `exp${i+1}` ;
+  document.getElementById(expId).innerHTML = experience.tiJob[i] + ' ' + experience.orgName[i] + ' ' + experience.starAt[i] + ' ' + experience.finishAt[i] ;
+}
+
+for(let i = 0 ; i < languages.langSelected.length ; i++)
+{
+  if(i > 3 ) //the number of languages I have in the template right now , we can change it later
+    break;
+  const langId = `lang${i+1}`;
+  const langLevelId = `lang${i+1}Level`;
+  document.getElementById(langId).innerHTML = languages.langSelected[i] ;
+  document.getElementById(langLevelId).innerHTML = languages.rateLanguage[i] ;
+}
+
 
 //to hide all buttons by hidding the container div
 // document.getElementById('hideBtns').addEventListener('click', function(){

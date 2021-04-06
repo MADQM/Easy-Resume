@@ -43,7 +43,7 @@ const section = document.getElementById('formEduSection');
 const articleElement = document.createElement('article');
 section.appendChild(articleElement);
 
-
+let counterConfirm = 0;
 
 function table()
 {
@@ -72,7 +72,13 @@ function table()
 let myEduForm = document.getElementById('eduForm');
 let formEduSection = document.getElementById('formEduSection');
 let counterClick = 0;
+let unName = [];
+let unMajor = [];
+let yearOfGraduate = [];
+let unDegree = [];
+
 myEduForm.addEventListener('submit',addNewEducation);
+
 
 function addNewEducation(event)
 {
@@ -83,28 +89,31 @@ function addNewEducation(event)
   if(counterClick<=1){
     table();
   }
-  let unName = event.target.unvName.value;
-  let unMajor = event.target.unMajor.value;
-  let yearOfGraduate = event.target.yearOfGraduate.value;
-  let unDegree = event.target.unDegree.value;
+  unName.push( event.target.unvName.value);
+  unMajor.push( event.target.unMajor.value);
+  yearOfGraduate.push( event.target.yearOfGraduate.value);
+  unDegree.push( event.target.unDegree.value);
 
 
   const newEducation = new Education (unName,unMajor,yearOfGraduate,unDegree);
   newEducation.headerRander();
-
+  myEduForm.reset();
   //   newEducation.render();
   let confirmEduWarning = document.getElementById('connfirmEdu');
   let connnfirmEdu = document.getElementById('connnfirmEdu');
   confirmEduWarning.addEventListener('submit',warningEduConfirm);
   function warningEduConfirm()
   {
-
-    let confirmm = confirm('Are You Sure ?');
-    if (confirmm === true) {
-      { let data= JSON.stringify(newEducation);
-        localStorage.setItem('Education',data);}
-    } else {
-      alert('please reconsidering your inputs');
+    counterConfirm++;
+    if(counterConfirm === 1 )
+    {
+      let confirmm = confirm('Are You Sure ?');
+      if (confirmm === true) {
+        { let data= JSON.stringify(newEducation);
+          localStorage.setItem('Education',data);}
+      } else {
+        alert('please reconsidering your inputs');
+      }
     }
   }
 }

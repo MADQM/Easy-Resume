@@ -22,10 +22,16 @@
 
 
 // }
-Personality.all=[];
+// Personality.all=[];
 
-
-
+let counter = 0; //this counter to delete the text area just for the fisrt time
+//this function to delete the default value in the text area
+function clearText()
+{
+  if(counter < 1 )
+    document.getElementById('bioInfo').value='';
+  counter++;
+}
 
 let newInformation ;
 
@@ -37,7 +43,6 @@ myForm.addEventListener('submit', holdInformation);
 
 function holdInformation(event)
 {
-
   event.preventDefault();
   //   console.log(event.target.fName.value);
   //
@@ -48,13 +53,20 @@ function holdInformation(event)
   let telephonePersonal = event.target.tPhone.value;
   let eMail = event.target.eMail.value;
   let locAddress = event.target.adress.value;
+  // console.log(event.target.bioInfo.value);
+  let bioInfo = event.target.bioInfo.value;
 
-  newInformation=new Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddress);
+  newInformation=new Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddress , bioInfo);
+  // event.target.fName.value = '';
+  // event.target.lName.value = '';
+  // event.target.bDate.value = '';
+  // event.target.tPhone.value = '';
+  // event.target.eMail.value = '';
+  // event.target.adress.value = '';
+  // event.target.bioInfo.value = '';
+  myForm.reset();
 
-
-
-
-
+  alert('your information was successfully added');
 
 
 
@@ -87,6 +99,7 @@ function warningConfirm()
 
 
     let data= JSON.stringify(newInformation);
+    // console.log(JSON.stringify(newInformation));
     localStorage.setItem('personality',data);
     formSection.removeEventListener('submit', holdInformation);
   }

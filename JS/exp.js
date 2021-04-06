@@ -40,7 +40,7 @@ tabelElement.addEventListener('click', removeItemFromCart);
 //   };
 // }
 
-
+let counterConfirm = 0;
 function removeItemFromCart(event)
 {
   tabelElement.deleteRow(1);
@@ -77,6 +77,11 @@ function table()
 let myForm = document.getElementById('expForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
+let tiJob =[];
+let orgName = [];
+let starAt =[];
+let finishAt =[];
+
 myForm.addEventListener('submit',addNewExperiance);
 
 function addNewExperiance(event)
@@ -88,28 +93,32 @@ function addNewExperiance(event)
   if(counterClick<=1){
     table();
   }
-  let tiJob = event.target.tiJob.value;
-  let orgName = event.target.orgName.value;
-  let starAt = event.target.starAt.value;
-  let finishAt = event.target.finishAt.value;
+  tiJob.push(event.target.tiJob.value);
+  orgName.push(event.target.orgName.value);
+  starAt.push(event.target.starAt.value);
+  finishAt.push(event.target.finishAt.value);
 
 
   const newExperiance = new Experiance (tiJob,orgName,starAt,finishAt);
   newExperiance.headerRander();
   //   newEducation.render();
+  myForm.reset();
 
   let confirmWarning = document.getElementById('connfirm');
   let connnfirm = document.getElementById('connnfirm');
   confirmWarning.addEventListener('submit',warningConfirm);
   function warningConfirm()
   {
-
-    let confirmm = confirm('Are You Sure ?');
-    if (confirmm === true) {
-      { let data= JSON.stringify(newExperiance);
-        localStorage.setItem('Experiance',data);}
-    } else {
-      alert('please reconsidering your inputs');
+    counterConfirm++;
+    if(counterConfirm === 1 )
+    {
+      let confirmm = confirm('Are You Sure ?');
+      if (confirmm === true) {
+        { let data= JSON.stringify(newExperiance);
+          localStorage.setItem('Experiance',data);}
+      } else {
+        alert('please reconsidering your inputs');
+      }
     }
   }
 }

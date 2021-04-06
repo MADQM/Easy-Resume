@@ -40,6 +40,7 @@ tabelElement.addEventListener('click', removeItemFromCart);
 //   };
 // }
 
+let counterConfirm = 0;
 
 function removeItemFromCart(event)
 {
@@ -74,12 +75,17 @@ function table()
   tableHeaderRow1.appendChild(tableHeader4);
   tableHeader4.textContent='Finish At';
 }
+let skillName = [];
+let placeOfLearning = [];
+let starAt = [];
+let finishAt = [];
+
 let myForm = document.getElementById('skillForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
-myForm.addEventListener('submit',addNewExperiance);
+myForm.addEventListener('submit',addNewSkill);
 
-function addNewExperiance(event)
+function addNewSkill(event)
 {
 
 
@@ -88,10 +94,10 @@ function addNewExperiance(event)
   if(counterClick<=1){
     table();
   }
-  let skillName = event.target.skillName.value;
-  let placeOfLearning = event.target.placeOfLearning.value;
-  let starAt = event.target.starAt.value;
-  let finishAt = event.target.finishAt.value;
+  skillName.push(event.target.skillName.value);
+  placeOfLearning.push(event.target.placeOfLearning.value);
+  starAt.push(event.target.starAt.value);
+  finishAt.push(event.target.finishAt.value);
 
 
   const newSkills = new Skills (skillName,placeOfLearning,starAt,finishAt);
@@ -99,19 +105,22 @@ function addNewExperiance(event)
   //   newEducation.render();
   // let data= JSON.stringify(newSkills);
   // localStorage.setItem('Skills',data);
-
+  myForm.reset();
   let confirmWarning = document.getElementById('connfirm');
   let connnfirm = document.getElementById('connnfirm');
   confirmWarning.addEventListener('submit',warningConfirm);
   function warningConfirm()
   {
-
-    let confirmm = confirm('Are You Sure ?');
-    if (confirmm === true) {
-      { let data= JSON.stringify(newSkills);
-        localStorage.setItem('Skills',data);}
-    } else {
-      alert('please reconsidering your inputs');
+    counterConfirm++;
+    if(counterConfirm === 1 )
+    {
+      let confirmm = confirm('Are You Sure ?');
+      if (confirmm === true) {
+        { let data= JSON.stringify(newSkills);
+          localStorage.setItem('Skills',data);}
+      } else {
+        alert('please reconsidering your inputs');
+      }
     }
   }
 }
