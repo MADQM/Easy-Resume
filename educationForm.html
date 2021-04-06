@@ -39,20 +39,24 @@
             <fieldset>
               <legend>Education:</legend>
               <label for="unvName">University Name</label><br>
-              <input type="text" id="unvName" name="unvName" ><br>
+              <input type="text" id="unvName" name="unvName" required ><br>
               <label for="unMajor">Major:</label><br>
-              <input type="text" id="unMajor" name="unMajor"><br>
+              <input type="text" id="unMajor" name="unMajor" required><br>
               <label for="yearOfGraduate">Year Of Graduate :</label><br>
-              <input type="number" pattern='[0-9]{4}' id="yearOfGraduate" name="yyyy"><br>
-              <label for="unDegree">Degree:</label><br>
-          <input type="number" id="unDegree" name="unDegree"><br>
+              <input type="number" pattern='[0-9]{4}' id="yearOfGraduate" name="yyyy" required><br>
+              <label for="unDegree">GPA:</label><br>
+          <input type="number" id="unDegree" name="unDegree" required><br>
               
           <input type="submit" value="Add">
-         
+
+        </fieldset>
+        </form>
+      
+        <img src="img/group.png" alt="">
 
           <!-- <section id="formEduSection"></section>   -->
-            </fieldset>
-          </form>
+            
+         
  
     <section id="formEduSection"></section> 
 <table id="tableEdu"></table>
@@ -60,12 +64,14 @@
 <table id="tableEdu"></table>
 <form id="connfirmEdu" action="experianceForm.html">
   <section id="connnfirmEdu">
-<button type="submit">Submit!</button>
+
+   
+<button  id="edusubmit" type="submit">Submit!</button>
 </section>
 </form>
-    <a href="form.html" class="previous">&laquo; Previous</a>
-    <a href="experianceForm.html" class="next">Next &raquo;</a>
-
+  
+<button type="submit">  <a href="form.html" class="previous">&laquo; Previous</a></button>
+<button type="submit"><a href="experianceForm.html" class="next">Next &raquo;</a></button>
 
 
     <section class="overflow" id="aboutUs">
@@ -138,8 +144,8 @@
             <h4 class="site-copyright">
                 
             </footer><ul>
-                <li>Home</li>
-                <li>About Us</li>
+                <li> <a  class="nav1" href="index.html">Home</a></li>
+                <li> <a  class="nav3" href="#aboutUs">About us</a></li>
                 <li>Contact Us</li>
             </ul>
             
