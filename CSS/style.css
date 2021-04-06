@@ -772,16 +772,17 @@ body > main > button{
  /* Child Text Container */
  .content_img div{
   position: absolute;
-  bottom: 90px;
-  right: 15px;
-  /* background: black; */
-  color: #ffffff;
+  /* bottom: 90px; */
+  right: 38px;
+  background: black;
+  color: #ceafaf;
   margin-bottom: 5px;
-  font-family: sans-serif;
+  font-family: kalam;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  -webkit-transition: visibility 2s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
+  border-radius: 30px
  }
  
  /* Hover on Parent Container */
@@ -793,7 +794,7 @@ body > main > button{
   width: 150px;
   padding: 8px 15px;
   visibility: visible;
-  opacity: 10; 
+  opacity: 1; 
  }
 
 

@@ -9,20 +9,20 @@
 
 
 window.onload = function () {
-  document.getElementById('download')
-    .addEventListener('click', () => {
-      const downloadPdf = this.document.getElementById('downloadPdf');
-      console.log(downloadPdf);
-      console.log(window);
-      let opt = {
-        margin:.005,
-        filename: 'myfile.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
-      html2pdf().from(downloadPdf).set(opt).save();
-    });
+  document.getElementById('download').addEventListener('click', () => {
+    event.preventDefault();
+    const downloadPdf = this.document.getElementById('downloadPdf');
+    // console.log(downloadPdf);
+    // console.log(window);
+    let opt = {
+      margin:.005,
+      filename: 'Resume.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+    html2pdf().from(downloadPdf).set(opt).save();
+  });
 };
 const colors = [
   '#DE354C',
@@ -103,28 +103,32 @@ document.getElementById('changeFontColorRight').addEventListener('click', functi
 document.getElementById('leftColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('leftSection')[0].style.backgroundColor = document.getElementById('custColorLeft').value;
-  document.getElementById('custColorLeft').value='';
+  // document.getElementById('custColorLeft').value='';
+  for(let i = 0 ; i<document.getElementsByClassName('rated').length ; i++)
+  {
+    document.getElementsByClassName('rated')[i].style.color=document.getElementById('custColorLeft').value;
+  }
 });
 
 //to get the input color value and assign it
 document.getElementById('leftFontColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('leftSection')[0].style.color = document.getElementById('custFontColorLeft').value;
-  document.getElementById('custFontColorLeft').value='';
+  // document.getElementById('custFontColorLeft').value='';
 });
 
 //to get the input color value and assign it
 document.getElementById('rightColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('rightSection')[0].style.backgroundColor = document.getElementById('custColorRight').value;
-  document.getElementById('custColorRight').value='';
+  // document.getElementById('custColorRight').value='';
 });
 
 //to get the input color value and assign it
 document.getElementById('rightFontColorForm').addEventListener('click', function(){
   event.preventDefault();
   document.getElementsByClassName('rightSection')[0].style.color = document.getElementById('custFontColorRight').value;
-  document.getElementById('custFontColorRight').value='';
+  // document.getElementById('custFontColorRight').value='';
 });
 
 
@@ -523,7 +527,7 @@ document.getElementsByClassName('educationPart')[0].addEventListener('mouseout',
 
 //to check if the user click the edit or the delete option
 document.getElementById('edit11').addEventListener('click', function(){editFun('major1', 'major1Input');});
-document.getElementById('delete11').addEventListener('click', function(){deleteFun('major1', 'major1Input');});
+document.getElementById('delete11').addEventListener('click', function(){deleteFun('majorD1', 'major1Input');});
 
 
 //to check if the user wrote in the input box and clicked enter
@@ -564,7 +568,7 @@ document.getElementsByClassName('educationPart')[0].addEventListener('mouseout',
 
 //to check if the user click the edit or the delete option
 document.getElementById('edit13').addEventListener('click', function(){editFun('major2', 'major2Input');});
-document.getElementById('delete13').addEventListener('click', function(){deleteFun('major2', 'major2Input');});
+document.getElementById('delete13').addEventListener('click', function(){deleteFun('majorD2', 'major2Input');});
 
 
 //to check if the user wrote in the input box and clicked enter
@@ -605,7 +609,7 @@ document.getElementsByClassName('educationPart')[0].addEventListener('mouseout',
 
 //to check if the user click the edit or the delete option
 document.getElementById('edit15').addEventListener('click', function(){editFun('major3', 'major3Input');});
-document.getElementById('delete15').addEventListener('click', function(){deleteFun('major3', 'major3Input');});
+document.getElementById('delete15').addEventListener('click', function(){deleteFun('majorD3', 'major3Input');});
 
 
 //to check if the user wrote in the input box and clicked enter
@@ -648,7 +652,7 @@ document.getElementsByClassName('educationPart')[0].addEventListener('mouseout',
 
 //to check if the user click the edit or the delete option
 document.getElementById('edit17').addEventListener('click', function(){editFun('major4', 'major4Input');});
-document.getElementById('delete17').addEventListener('click', function(){deleteFun('major4', 'major4Input');});
+document.getElementById('delete17').addEventListener('click', function(){deleteFun('majorD4', 'major4Input');});
 
 
 //to check if the user wrote in the input box and clicked enter
