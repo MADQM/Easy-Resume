@@ -10,12 +10,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&amp;display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
         <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
-        <link rel="stylesheet" href="CSS/reset.css">
-
-        <link rel="stylesheet" href="CSS/style.css">
+        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/reset.css">
 
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="/CSS/edu.css" rel="stylesheet">
         <title>Easy Resume</title>
     </head>
     <body>
@@ -43,17 +44,17 @@
                 <fieldset>
                   <legend>Personality:</legend>
                   <label for="fName">First name:</label><br>
-                  <input type="text" id="fName" name="fname"><br>
+                  <input type="text" id="fName" name="fname" required><br>
                   <label for="lName">Last name:</label><br>
-                  <input type="text" id="lName" name="lname" ><br>
+                  <input type="text" id="lName" name="lname" required><br>
                   <label for="bDate">Birth Date:</label><br>
-                  <input type="text" id="bDate" name="bDate"><br>
+                  <input type="text" id="bDate" name="bDate"required><br>
                   <label for="tPhone">Telephone:</label><br>
-                  <input type="number" id="tPhone" name="tPhone"><br>
+                  <input type="number" id="tPhone" name="tPhone" required><br>
                   <label for="eMail">Emai Address:</label><br>
-                  <input type="text" id="eMail" name="eMail"><br>
+                  <input type="text" id="eMail" name="eMail" required><br>
                   <label for="adress">Address:</label><br>
-                  <input type="text" id="adress" name="adress"><br>
+                  <input type="text" id="adress" name="adress" required><br>
                  
 
                  
@@ -61,8 +62,8 @@
 
 
                   <br><br>
-                  <h5 > Write about your self :</h5>
-                  <textarea name="message" style="width: 105%; height: 100px;" id="bioInfo" onclick="clearText()">Make it a brief bio that describes who you are </textarea>
+                  <h5 > Bio :</h5>
+                  <textarea name="message" style="width: 105%; height: 100px;" id="bioInfo"    onclick="clearText()">Make it a brief bio that describes who you are </textarea>
 
                   
                   <input type="submit" value="Add">

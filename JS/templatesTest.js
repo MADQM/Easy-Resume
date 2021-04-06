@@ -110,35 +110,35 @@ function showEducationalInformation()
 
 }
 
-
+// console.log(exp.getExpname().orgName[0]);
 function showExperianceInformation ()
 {
- 
 
   loadExperiance();
- console.log(exp.getExpname().orgName[0]);
+
+
   let exp1 = document.getElementById('exp1');
-  exp1.textContent=exp.getExpname().tiJob[0];
+  exp1.textContent=`${exp.getExpname().tiJob[0]} @ ${exp.getExpname().orgName[0]}`;
   let exp2 = document.getElementById('exp2');
-  exp2.textContent=exp.getExpname().tiJob[1];
+  exp2.textContent=`${exp.getExpname().tiJob[1]} @ ${exp.getExpname().orgName[1]}`;
   let exp3 = document.getElementById('exp3');
-  exp3.textContent=exp.getExpname().tiJob[2];
+  exp3.textContent=`${exp.getExpname().tiJob[2]} @ ${exp.getExpname().orgName[2]}`;
 
 
-  let expOrg1 = document.getElementById('expOrg1');
-  expOrg1.textContent=exp.getExpname().orgName[0];
-  let expOrg2 = document.getElementById('expOrg2');
-  expOrg2.textContent=exp.getExpname().orgName[1];
-  let expOrg3 = document.getElementById('expOrg3');
-  expOrg3.textContent=exp.getExpname().orgName[2];
+  // let expOrg1 = document.getElementById('expOrg1');
+  // expOrg1.textContent=;
+  // let expOrg2 = document.getElementById('expOrg2');
+  // expOrg2.textContent=exp.getExpname().orgName[1];
+  // let expOrg3 = document.getElementById('expOrg3');
+  // expOrg3.textContent=exp.getExpname().orgName[2];
 
 
   let expStartAndFinish1 = document.getElementById('expStartAndFinish1');
-  expStartAndFinish1.textContent= ` ${exp.getExpname().starAt[0]} - ${exp.getExpname().finishAt[0]}`;
+  expStartAndFinish1.textContent= ` ${exp.getExpname().starAt[0]} /     ${exp.getExpname().finishAt[0]}`;
   let expStartAndFinish2 = document.getElementById('expStartAndFinish2');
-  expStartAndFinish2.textContent=` ${exp.getExpname().starAt[1]} - ${exp.getExpname().finishAt[1]}`;
+  expStartAndFinish2.textContent=` ${exp.getExpname().starAt[1]} /  ${exp.getExpname().finishAt[1]}`;
   let expStartAndFinish3 = document.getElementById('expStartAndFinish3');
-  expStartAndFinish3.textContent=` ${exp.getExpname().starAt[2]} - ${exp.getExpname().finishAt[2]}`;
+  expStartAndFinish3.textContent=` ${exp.getExpname().starAt[2]} /     ${exp.getExpname().finishAt[2]}`;
 
 
 }
@@ -148,7 +148,7 @@ function showSkillsInformation ()
 
   loadSkills();
 
- loadLanguage();
+  loadLanguage();
   let skill1 = document.getElementById('skill1');
   skill1.textContent=skill.getSkillname().skillName[0];
   let skill2 = document.getElementById('skill2');
@@ -156,7 +156,7 @@ function showSkillsInformation ()
   let skill3 = document.getElementById('skill3');
   skill3.textContent=skill.getSkillname().skillName[2];
 
- let skill4 = document.getElementById('skill4');
+  let skill4 = document.getElementById('skill4');
   skill4.textContent=lang.getLangname().langSelected[0];
   let skill5 = document.getElementById('skill5');
   skill5.textContent=lang.getLangname().langSelected[1];
