@@ -80,6 +80,8 @@ function addNewEducation(event)
 
   event.preventDefault();
   counterClick++;
+  // let data= JSON.stringify(newEducation);
+  //     localStorage.setItem('Education',data);
   if(counterClick<=1){
     table();
   }
@@ -91,8 +93,9 @@ function addNewEducation(event)
 
   const newEducation = new Education (unName,unMajor,yearOfGraduate,unDegree);
   newEducation.headerRander();
+  // let data= JSON.stringify(newEducation)
 
-  //   newEducation.render();
+    // newEducation.render();
   let confirmEduWarning = document.getElementById('connfirmEdu');
   let connnfirmEdu = document.getElementById('connnfirmEdu');
   confirmEduWarning.addEventListener('submit',warningEduConfirm);
@@ -101,12 +104,13 @@ function addNewEducation(event)
 
     let confirmm = confirm('Are You Sure ?');
     if (confirmm === true) {
-      { let data= JSON.stringify(newEducation);
-        localStorage.setItem('Education',data);}
-    } else {
+
+      let data= JSON.stringify(newEducation);
+      localStorage.setItem('Education',data);
+      
+    }else{
       alert('please reconsidering your inputs');
     }
   }
-}
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
+}

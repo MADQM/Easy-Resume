@@ -47,3 +47,4 @@ console.log(info.getname().locAddress);
 // console.log(Personality.all[firstName]);
 let fname = document.getElementById('fnameAndlname');
 fname.textContent=` ${info.getname().firstName} ${info.getname().lastName}`;
+
