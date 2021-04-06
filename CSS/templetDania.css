@@ -2,6 +2,7 @@ body{
     width:100%;
     /* position:relative; */
     /* margin-left: 150px; */
+    margin-top: 100px;
 }
 
 nav{
@@ -9,18 +10,18 @@ nav{
     color:rgb(245, 229, 205);
     font-style: italic;
     position: relative;
-   /* height:910px; */
+   height:250px;
 
     }
 
  nav img{
   width: 150px;  
   border-radius: 50%;
-  margin-right:900px;
+  margin-right:700px;
 }
 #profile p{
-    font-size:30px;
-    margin-right: 900px;
+    font-size:20px;
+    margin-right: 700px;
     
 }
 .add {
@@ -41,6 +42,7 @@ bottom:60px;
 }
 #email{
     margin-bottom: 50px;
+    
 }
 #add1{ 
     margin-bottom:-20px;
@@ -59,7 +61,7 @@ bottom:60px;
   background-size: cover; /* Resize the background image to cover the entire container */
    
 }
-#pdf{
+/* #pdf{
     position: absolute;
     left:950px;
     bottom:150px;
@@ -68,65 +70,73 @@ bottom:60px;
     background-image:url("https://image.pngaaa.com/218/2621218-small.png");
   background-color:yellow; /* Used if the image is unavailable */
   /* height: 500px; You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-   
-}
-main{
-    /* position: absolute; */
-    height:5000px;
+  /* background-position: center; /* Center the image */
+  /* background-repeat: no-repeat; Do not repeat the image */
+  /* background-size: cover; Resize the background image to cover the entire container */ 
     
-}
-    #keyword{
-        width:200px;
-        height:15%;
+/* main{ */
+    /* position: absolute; */
+    /* height:100%; */
+    
+/* } */
+    .keyword{
+        /* width:200px; */
+        /* height:1000px; */
         background-color:#f4d58d;
         color:darkred;
         font-size:25px ;
         font-weight: bolder;
         font-family: 'Source Code Pro', monospace;
-        position: relative;
-        top:-30px;
+        /* position: relative; */
+        top:50px;
+        
+
         
     }
-    #keyword p{
-        margin-left:20px;   
+    /* .keyword p,li{
+        margin-right:30px;   
         
-}
-#definition{
-    color:black;
-    width: 850px;
-    height:670px;
-    position:absolute;
-    left:220px;
-    top:251px;
-    font-size: 20px;
-    background-color:#f6f4d2;
-    
+} */
 
-}
-#definition p ,li{
+/* #definition p ,li{
 margin-left:10px;
-}
-footer img{
+} */
+#foot img {
     width:20px;
     height: 20px;
+
+   
 }
-footer{
+#foot {
+font-size: 20px;
+}
+/* footer{
     width:1050px;
     background-color: #9c191b;
     color:rgb(245, 229, 205);
-    position:relative;
-    top:850px;
-    right:1069px;
+    /* position:relative; */
+    /* top:-px; */
+    /* right:-10px; */
+    
+/* }  */
+/* footer  ul{
+    margin-left:350px;
+} */
+.identifation{
+width:100%;
+    font-size: 20px;
+    height:200px;
+    
     
 }
-footer  ul{
-    margin-left:350px;
+#me{
+    width:650px;
+    /* height: 100%; */
+    margin-left: 100px;
 }
 
-body {
+
+/* body {
     margin: 0;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: .8125rem;
@@ -135,15 +145,15 @@ body {
     color: #333;
     text-align: left;
     background-color: #eee
-} 
+}  */
 
  .mt-50 {
-    margin-top: 0px;
+    margin-top: 10px;
     margin-left: 100px;
 } 
 
 .mb-50 {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 } 
 
 .card {
@@ -163,7 +173,7 @@ body {
 /* .card-img-actions { 
      position: relative 
  } */
-
+/* 
  .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -178,7 +188,7 @@ body {
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, .02);
     border-bottom: 1px solid rgba(0, 0, 0, .125)
-}  */
+}  
 
 a,li {
     text-decoration: none !important
@@ -201,9 +211,10 @@ a,li {
     flex-wrap: nowrap 
   } 
 
- @media (min-width: 768px) {
+ @media (min-width: 1000px) {
     .wmin-md-400 {
-        min-width: 400px !important
+        min-width: 400px ;!important
+        min-height: 1000px;
     }
 }  
 
@@ -219,7 +230,215 @@ a,li {
     display: block;
     line-height: 1;
     padding: .62503rem
-}  
+}   */
 ul {
     list-style-type: none;
 }
+/* #edu0{
+position: absolute;
+
+} */
+/* .mt-50 {
+    margin-top: 50px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+} */
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .1875rem
+}
+
+.card-img-actions {
+    position: relative
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center
+}
+
+.card-title {
+    margin-top: 10px;
+    font-size: 17px
+}
+
+.invoice-color {
+    color: red !important
+}
+
+.card-header {
+    padding: .9375rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .02);
+    border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+
+a {
+    text-decoration: none !important
+}
+
+.btn-light {
+    color: #333;
+    background-color: #fafafa;
+    border-color: #ddd
+}
+
+.header-elements-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+@media (min-width: 768px) {
+    .wmin-md-400 {
+        min-width: 400px !important
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2196f3
+}
+
+.btn-labeled>b {
+    position: absolute;
+    top: -1px;
+    background-color: blue;
+    display: block;
+    line-height: 1;
+    padding: .62503rem
+}
+/* .identifation{
+    width:800px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+} */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(2 2 2 / 55%);
+    position: fixed;
+    /* top: 0; */
+    width: 99.4%;
+    height: 93px;
+    /* border-bottom-style: ridge; */
+    /* border-bottom-color: #fbc63c; */
+    z-index: 9;
+    /* margin-bottom:300px; */
+    }
+ 
+header .navbar h1 {
+    display: inline-block;
+    /* position: relative;
+    right: 73%; */
+    margin-left:8%;
+    color:#ffffffa6;
+    font-size: 28px;
+    font-family: 'kalam';
+
+}
+
+  header .navbar a {
+    /* float: left; */
+    display:inline-block;
+    color: #000000;
+    /* text-align: center; */
+    padding: 36px 50px;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top:0;
+  }
+  
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  #logo{ 
+    position: fixed;
+    top: 17px;
+    left: 49px;
+    width: 58px;
+  }
+ 
+  body > header > div > a:nth-child(2)
+  {
+    /* float: left; */
+    /* display: block; */
+    color: #f2f2f2;
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
+    /* margin-left: 414px; */
+    /* padding-right: 89px; */
+    /* font-size: xx-large; */
+  }
+  body > header > div
+  {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 0px;
+    right: 0px;
+}
+    
+  body > header > div > a:nth-child(3)
+  {
+    /* float: left; */
+    /* display: block; */
+    color: #020202;
+    /* text-align: center; */
+    /* padding: 28px 75px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
+    /* margin-right: 128px; */
+    /* font-size: xx-large; */
+  }
+  body > header > div > a.nav3
+  {
+    /* float: left; */
+    /* display: block; */
+    color: #000000;
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    /* font-size: xx-large; */
+  }
+  body > header > div > a.nav1
+  {
+    /* float: left; */
+    /* display: block; */
+    color: #060606;
+    /* text-align: center; */
+    /* padding: 28px 66px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
+    /* padding-right: 89px; */
+    /* margin-left: 427px; */
+    /* border-right-width: 20px; */
+    /* margin-right: 46px; */
+    /* font-size: xx-large; */
+    margin-left: 25%;
+  }

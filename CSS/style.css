@@ -24,12 +24,14 @@ background-size: 35%;} */
   
   header .navbar h1 {
     display: inline-block;
-    /* position: relative;
-    right: 73%; */
-    margin-left:8%;
-    color:#ffffffa6;
+    margin-left: 70%;
+    color: #ffffffa6;
     font-size: 28px;
     font-family: 'kalam';
+    margin-top: 3%;
+    /* position: relative; */
+    /* top: 15px; */
+    width: 156px;
 
 }
 
@@ -55,7 +57,14 @@ background-size: 35%;} */
     left: 49px;
     width: 58px;
   }
- 
+ #test
+ {
+  padding: 0px; 
+ }
+ #test:hover
+ {
+   background: none;
+ }
   body > header > div > a:nth-child(2)
   {
     /* float: left; */
@@ -610,6 +619,16 @@ button[type="submit"]
 }
 
 
+
+/* .us p {
+  position: relative;
+  left: 45%;
+  bottom: 87px;
+  z-index: -3;
+  color: red;
+  display: inline;
+} */
+=======
 /* 
 .row{
   flex: 50%;
@@ -721,6 +740,14 @@ body > main > button{
 }
 
 
+/* .us span {
+  visibility: hidden;
+}
+.us img:hover span {
+  visibility: visible;
+} */
+
+/* .homepage #page section:hover p */
 
 #expsubmit{
   padding: 0.5% 1%;
@@ -730,6 +757,45 @@ body > main > button{
   bottom: 608px;
   left: 354px;
 }
+
+
+/* Parent Container */
+.content_img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  /* margin-right: 10px; */
+  margin-left: 4%;
+ }
+ 
+ /* Child Text Container */
+ .content_img div{
+  position: absolute;
+  bottom: 90px;
+  right: 15px;
+  /* background: black; */
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ 
+ /* Hover on Parent Container */
+ .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover div{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 10; 
+ }
+
 
 #skillsubmit{
 
@@ -787,57 +853,3 @@ bottom: 601px;
   height: 620px;
 } */
 
-
-
-
-#top > div > div > div > div.cover-bg.p-3.p-lg-4.text-white > div > div.col-lg-8.col-md-7.text-center.text-md-start > div.d-print-none.aos-init.aos-animate > button{
-  --bs-blue: #0D6EFD;
-  --bs-indigo: #6610F2;
-  --bs-purple: #6F42C1;
-  --bs-pink: #D63384;
-  --bs-red: #DC3545;
-  --bs-orange: #FD7E14;
-  --bs-yellow: #FFC107;
-  --bs-green: #198754;
-  --bs-teal: #20C997;
-  --bs-cyan: #0DCAF0;
-  --bs-white: #fff;
-  --bs-gray: #6C757D;
-  --bs-gray-dark: #343A40;
-  --bs-primary: #4A89DC;
-  --bs-secondary: #656D78;
-  --bs-success: #37BC9B;
-  --bs-info: #3BAFDA;
-  --bs-warning: #F6BB42;
-  --bs-danger: #E9573F;
-  --bs-light: #E6E9ED;
-  --bs-dark: #434A54;
-  --bs-font-sans-serif: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  font-family: var(--bs-font-sans-serif);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  box-sizing: border-box;
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .5rem 1.5rem;
-  border-radius: 3rem;
-  transition: all .18s ease-in-out;
-  background-color: #E6E9ED;
-  border-color: #E6E9ED;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-  margin-top: .5rem!important;
-  margin-right: .5rem!important;
-  color: #434A54!important;
-  font-size: .9375rem;
-}
