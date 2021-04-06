@@ -124,9 +124,17 @@ font-size: 20px;
 } */
 .identifation{
 width:100%;
-    font-size: 15px;
-
+    font-size: 20px;
+    height:200px;
+    
+    
 }
+#me{
+    width:650px;
+    /* height: 100%; */
+    margin-left: 100px;
+}
+
 
 /* body {
     margin: 0;
