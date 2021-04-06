@@ -20,7 +20,7 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
     tableRow2.appendChild(tableData);
     //  tableData.textContent=;
     let buttonEl = document.createElement('button');
-    let eduDetails =[this.unName,this.unMajor,this.yearOfGraduate,this.unDegree];
+    let eduDetails =[this.unName[this.unName.length-1],this.unMajor[this.unMajor.length-1],this.yearOfGraduate[this.yearOfGraduate.length-1],this.unDegree[this.unDegree.length-1]];  //we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
 
@@ -53,7 +53,7 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
 }
 ///////////////////////////////////////////
 
-function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddress)
+function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddress , bioInfo)
 {
   this.firstName=firstName;
   this.lastName=lastName;
@@ -61,6 +61,7 @@ function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddres
   this.telephonePersonal=telephonePersonal;
   this.eMail=eMail;
   this.locAddress=locAddress;
+  this.bioInfo = bioInfo ;
 
 
   //   this.settingInfo = function (key , item)
@@ -109,7 +110,7 @@ function Experiance (tiJob,orgName,starAt,finishAt)
     tableRow2.appendChild(tableData);
 
     let buttonEl = document.createElement('button');
-    let expDetails =[this.tiJob,this.orgName,this.starAt,this.finishAt];
+    let expDetails =[this.tiJob[this.tiJob.length-1],this.orgName[this.orgName.length-1],this.starAt[this.starAt.length-1],this.finishAt[this.finishAt.length-1]]; //we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
 
@@ -152,7 +153,7 @@ function Skills (skillName,placeOfLearning,starAt,finishAt)
     tableRow2.appendChild(tableData);
 
     let buttonEl = document.createElement('button');
-    let expDetails =[this.skillName,this.placeOfLearning,this.starAt,this.finishAt];
+    let expDetails =[this.skillName[this.skillName.length-1],this.placeOfLearning[this.placeOfLearning.length-1],this.starAt[this.starAt.length-1],this.finishAt[this.finishAt.length-1]];//we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
 
@@ -194,7 +195,7 @@ function Language (langSelected,rateLanguage)
     tableRow2.appendChild(tableData);
 
     let buttonEl = document.createElement('button');
-    let expDetails =[this.langSelected,this.rateLanguage];
+    let expDetails =[this.langSelected[this.langSelected.length-1],this.rateLanguage[this.rateLanguage.length-1]]; //we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
 
