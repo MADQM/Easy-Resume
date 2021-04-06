@@ -16,12 +16,14 @@
   
   header .navbar h1 {
     display: inline-block;
-    /* position: relative;
-    right: 73%; */
-    margin-left:8%;
-    color:#ffffffa6;
+    margin-left: 70%;
+    color: #ffffffa6;
     font-size: 28px;
     font-family: 'kalam';
+    margin-top: 3%;
+    /* position: relative; */
+    /* top: 15px; */
+    width: 156px;
 
 }
 
@@ -47,7 +49,14 @@
     left: 49px;
     width: 58px;
   }
- 
+ #test
+ {
+  padding: 0px; 
+ }
+ #test:hover
+ {
+   background: none;
+ }
   body > header > div > a:nth-child(2)
   {
     /* float: left; */
@@ -582,10 +591,6 @@ input:hover
 
 }
 
-<<<<<<< HEAD
-=======
-}
-
 
 
 button#chooseTemp a
@@ -605,11 +610,59 @@ button[type="submit"]
 }
 
 
+/* .us p {
+  position: relative;
+  left: 45%;
+  bottom: 87px;
+  z-index: -3;
+  color: red;
+  display: inline;
+} */
+
+/* .us span {
+  visibility: hidden;
+}
+.us img:hover span {
+  visibility: visible;
+} */
+
+/* .homepage #page section:hover p */
 
 
+/* Parent Container */
+.content_img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  /* margin-right: 10px; */
+  margin-left: 4%;
+ }
+ 
+ /* Child Text Container */
+ .content_img div{
+  position: absolute;
+  bottom: 90px;
+  right: 15px;
+  /* background: black; */
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ 
+ /* Hover on Parent Container */
+ .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover div{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 10; 
+ }
 
-
-
-
-
->>>>>>> 9491bef28fedf9e14035a5bcdb48c75a48c19949
