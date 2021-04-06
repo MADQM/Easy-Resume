@@ -578,7 +578,12 @@ input:hover
 
 .us ul li:hover
 {
+  opacity: 0.5;
 
+}
+
+<<<<<<< HEAD
+=======
 }
 
 
@@ -607,3 +612,4 @@ button[type="submit"]
 
 
 
+>>>>>>> 9491bef28fedf9e14035a5bcdb48c75a48c19949
