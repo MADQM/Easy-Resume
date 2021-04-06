@@ -19,7 +19,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
 	
 
-	
+	<style>
+
+        /* label#imageLabel {
+    cursor: pointer;
+}          */
+
+	</style>
 
 </head>
 
@@ -53,7 +59,7 @@
 		<!-- Mobile menu end -->
 
 		<div class="imagePart">
-			<img id="userImg" src="assets/images/my-pic.jpg" ><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"><label for="file" id="imageLabel">Upload Image</label>
+			<img  id="userImg" src="assets/images/my-pic.jpg" ><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"><label style="cursor: pointer;" for="file" id="imageLabel">Upload Image</label>
 		</div>
 
 		<div class="name">
