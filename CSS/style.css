@@ -522,5 +522,7 @@ body > main > form
 
 .us ul li:hover
 {
+  opacity: 0.5;
 
 }
+
