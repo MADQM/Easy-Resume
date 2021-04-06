@@ -74,6 +74,7 @@ function table()
   tableHeaderRow1.appendChild(tableHeader4);
   tableHeader4.textContent='Finish At';
 }
+
 let myForm = document.getElementById('expForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
