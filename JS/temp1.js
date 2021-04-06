@@ -153,6 +153,7 @@ let experience   = JSON.parse(localStorage.getItem('Experiance'));
 let skills       = JSON.parse(localStorage.getItem('Skills'));
 
 document.getElementById('userName').innerHTML = personalInfo.firstName +' ' + personalInfo.lastName ;
+document.getElementById('bio').innerHTML = personalInfo.bioInfo ;
 document.getElementById('userTitle').innerHTML = experience.tiJob;
 //for contacts
 document.getElementById('email').innerHTML = personalInfo.eMail;

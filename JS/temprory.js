@@ -53,7 +53,7 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
 }
 ///////////////////////////////////////////
 
-function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddress)
+function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddress , bioInfo)
 {
   this.firstName=firstName;
   this.lastName=lastName;
@@ -61,6 +61,7 @@ function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddres
   this.telephonePersonal=telephonePersonal;
   this.eMail=eMail;
   this.locAddress=locAddress;
+  this.bioInfo = bioInfo ;
 
 
   //   this.settingInfo = function (key , item)

@@ -102,6 +102,7 @@ function addNewExperiance(event)
   const newExperiance = new Experiance (tiJob,orgName,starAt,finishAt);
   newExperiance.headerRander();
   //   newEducation.render();
+  myForm.reset();
 
   let confirmWarning = document.getElementById('connfirm');
   let connnfirm = document.getElementById('connnfirm');

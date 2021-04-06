@@ -97,7 +97,7 @@ function addNewLanguage(event)
 
   newLanguage.headerRander();
   //   newEducation.render();
-
+  myForm.reset();
   let confirmWarning = document.getElementById('connfirm');
   let connnfirm = document.getElementById('connnfirm');
   confirmWarning.addEventListener('submit',warningConfirm);
@@ -114,6 +114,7 @@ function addNewLanguage(event)
         alert('please reconsidering your inputs');
       }
     }
+    
   }
 
 }

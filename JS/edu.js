@@ -97,7 +97,7 @@ function addNewEducation(event)
 
   const newEducation = new Education (unName,unMajor,yearOfGraduate,unDegree);
   newEducation.headerRander();
-
+  myEduForm.reset();
   //   newEducation.render();
   let confirmEduWarning = document.getElementById('connfirmEdu');
   let connnfirmEdu = document.getElementById('connnfirmEdu');

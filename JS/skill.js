@@ -105,7 +105,7 @@ function addNewSkill(event)
   //   newEducation.render();
   // let data= JSON.stringify(newSkills);
   // localStorage.setItem('Skills',data);
-
+  myForm.reset();
   let confirmWarning = document.getElementById('connfirm');
   let connnfirm = document.getElementById('connnfirm');
   confirmWarning.addEventListener('submit',warningConfirm);
