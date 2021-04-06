@@ -83,9 +83,10 @@ main
 
 .row {
     display: flex;
-    margin: 100px;
-   
-
+    margin: 100px 200px;
+    box-sizing: border-box;
+    
+    width: 70%;
    
   }
  
@@ -116,8 +117,9 @@ main
 
   .column {
     flex: 33.33%;
-    border: 1px solid rgb(200, 171, 226);
- 
+    
+    box-sizing: border-box;
+    margin: 10px;
   }
 
   
