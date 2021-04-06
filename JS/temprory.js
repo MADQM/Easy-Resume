@@ -51,6 +51,7 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
 
   };
 }
+
 ///////////////////////////////////////////
 
 function Personality (firstName,lastName,bDate,telephonePersonal,eMail,locAddress , bioInfo)

@@ -114,7 +114,7 @@ function showEducationalInformation()
 function showExperianceInformation ()
 {
 
-loadExperiance();
+  loadExperiance();
 
 
   let exp1 = document.getElementById('exp1');
