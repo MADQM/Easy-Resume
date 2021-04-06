@@ -24,12 +24,14 @@ background-size: 35%;} */
   
   header .navbar h1 {
     display: inline-block;
-    /* position: relative;
-    right: 73%; */
-    margin-left:8%;
-    color:#ffffffa6;
+    margin-left: 70%;
+    color: #ffffffa6;
     font-size: 28px;
     font-family: 'kalam';
+    margin-top: 3%;
+    /* position: relative; */
+    /* top: 15px; */
+    width: 156px;
 
 }
 
@@ -55,7 +57,14 @@ background-size: 35%;} */
     left: 49px;
     width: 58px;
   }
- 
+ #test
+ {
+  padding: 0px; 
+ }
+ #test:hover
+ {
+   background: none;
+ }
   body > header > div > a:nth-child(2)
   {
     /* float: left; */
@@ -610,6 +619,16 @@ button[type="submit"]
 }
 
 
+
+/* .us p {
+  position: relative;
+  left: 45%;
+  bottom: 87px;
+  z-index: -3;
+  color: red;
+  display: inline;
+} */
+=======
 /* 
 .row{
   flex: 50%;
@@ -721,6 +740,14 @@ body > main > button{
 }
 
 
+/* .us span {
+  visibility: hidden;
+}
+.us img:hover span {
+  visibility: visible;
+} */
+
+/* .homepage #page section:hover p */
 
 #expsubmit{
   padding: 0.5% 1%;
@@ -730,6 +757,45 @@ body > main > button{
   bottom: 608px;
   left: 354px;
 }
+
+
+/* Parent Container */
+.content_img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: left;
+  /* margin-right: 10px; */
+  margin-left: 4%;
+ }
+ 
+ /* Child Text Container */
+ .content_img div{
+  position: absolute;
+  bottom: 90px;
+  right: 15px;
+  /* background: black; */
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+ }
+ 
+ /* Hover on Parent Container */
+ .content_img:hover{
+  cursor: pointer;
+ }
+ 
+ .content_img:hover div{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 10; 
+ }
+
 
 #skillsubmit{
 
@@ -786,3 +852,4 @@ bottom: 601px;
   position: relative;
   height: 620px;
 } */
+
