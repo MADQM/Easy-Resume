@@ -1,8 +1,16 @@
+/* body{
+  background-image: url();
+  background-repeat: no-repeat;
+background-position: 95% 15%;
+background-size: 35%;} */
+  
+  
+
+
 
 
  .navbar {
   overflow: hidden;
-  /* background-color: rgb(2 2 2 / 55%); */
   background-color: #747474;
   position: fixed;
   /* top: 0; */
@@ -490,8 +498,8 @@ body > main > form
 fieldset
 {
     width: 27%;
-    min-width: 27%;
-    min-height: 321px;
+    min-width: 25%;
+    min-height: 200px;
     border: 1px solid;
     margin: 0px 7%;
     border: solid rgb(116, 116, 116);
@@ -582,9 +590,6 @@ input:hover
 
 }
 
-<<<<<<< HEAD
-=======
-}
 
 
 
@@ -605,11 +610,179 @@ button[type="submit"]
 }
 
 
+/* 
+.row{
+  flex: 50%;
+}
 
 
 
 
+.column img{
+  width: 30px;
+  height: 30px;
+} */
+
+
+/* 
+#connnfirmEdu > button{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 325px;
+  left: 375px;
+} */
+
+#connnfirmInfo > button{
+padding: 0.5% 1%;
+border-radius: 15px;
+margin-left: 15%;
+left: 375px;
+position: relative;
+bottom: 602px;
+}
+
+/* 
+#connnfirm > button{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 326px;
+  left: 341px;
+} */
+/* 
+#connnfirm > button:nth-child(1){
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 280px;
+  left: 34px;
+} */
+
+
+#chooseTemp{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 280px;
+  left: 15px;
+}
+
+
+body > main > img{
+  color: #001f3f;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+  width: 468px;
+  bottom: 500px;
+  left: 956px;
+}
+
+
+body > main > button{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 453px;
+  left: 837px;
+}
+
+#langimg{
+  color: #001f3f;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+  width: 468px;
+  left: 956px;
+  bottom: 279px;
+}
+
+#edusubmit{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 608px;
+  left: 357px;
+}
 
 
 
->>>>>>> 9491bef28fedf9e14035a5bcdb48c75a48c19949
+#expsubmit{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 608px;
+  left: 354px;
+}
+
+#skillsubmit{
+
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 608px;
+  left: 342px;
+}
+
+#chooseTemp{
+margin: 0 auto;
+padding: 0 auto;
+}
+#chooseTemp{
+ 
+padding: 0.5% 1%;
+border-radius: 15px;
+margin-left: 15%;
+left: 15px;
+position: relative;
+bottom: 601px;
+}
+
+#skillsubmit{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 608px;
+  left: 360px;
+}
+
+#langsubmit{
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  margin-left: 15%;
+  position: relative;
+  bottom: 601px;
+  left: 77px;
+}
+
+
+/* body > main > div > img{
+  color: #001f3f;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+  position: relative;
+  height: 620px;
+} */
