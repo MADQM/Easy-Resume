@@ -9,8 +9,8 @@ background-size: 35%;} */
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding:0;
+  /* margin: 0;
+  padding:0; */
   
 
 }
@@ -40,7 +40,30 @@ main{
 }
 #perForm{
   margin-top: 10px;
+  display: flex;
 }
+#edForm{
+  margin-top: 126px;
+
+}
+.form-image{
+  box-sizing: border-box;
+  color: #001f3f;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+  width: 468px;
+  left: 731px;
+  bottom: 601px;
+}
+#perForm > fieldset{
+  margin-top: 30px;
+}
+
 
 .navbar {
   overflow: hidden;
@@ -731,7 +754,11 @@ bottom: 602px;
   left: 34px;
 } */
 
-
+#perForm > fieldset > input[type=submit]:nth-child(30){
+  background-color:rgb(59, 59, 59);
+  color: white;
+  width: 100px;
+}
 #chooseTemp{
   padding: 0.5% 1%;
   border-radius: 0;
@@ -740,21 +767,13 @@ bottom: 602px;
   bottom: 280px;
   left: 15px;
 }
-
-
-body > main > img{
-  color: #001f3f;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    position: relative;
-    width: 468px;
-    bottom: 684px;
-    left: 881px;
-}
+/* 
+#formSubmit{
+  top: 765px;
+    left: 281px;
+} */
+/* top: 765px;
+    left: 281px; */
 
 
 body > main > button{
@@ -922,12 +941,35 @@ button.previousBtn {
   height: 32px;
 }
 
-
+#formNext{
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
+  margin-left: 3%;
+  position: absolute;
+  top: 771px;
+  padding-bottom: 26px;
+  left: 706px;
+  background:rgb(221, 183, 221);
+  width: 100px;
+  
+}
 
 button#formSubmit {
   position: absolute;
-  top: 1005px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 100px;
   height: 32px;
+  top: 795px;
+    left: 295px;
+}
+
+#eduForm > fieldset{
+margin-top: 60px;
 }
 
 
