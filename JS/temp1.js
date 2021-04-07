@@ -191,6 +191,8 @@ if(localStorage.getItem('Experiance')!='undefined' && localStorage.getItem('Expe
       break;
     const expId = `exp${i+1}` ;
     document.getElementById(expId).innerHTML = experience.tiJob[i] + ' ' + experience.orgName[i] + ' ' + experience.starAt[i] + ' ' + experience.finishAt[i] ;
+    if(i==(experience.tiJob.length-1))
+      document.getElementById('userTitle').innerHTML = experience.tiJob[i];
   }
 
 }
