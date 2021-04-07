@@ -19,13 +19,14 @@ footer{
   text-align: center;
   color: #4b4b4b;
   margin-top: 1px;
+  padding: 50px;
   font-size: 25px;
   background: url(/Images/white_grey_lines.png) no-repeat center;
-  padding:50px;
+
   
   
 }
-#before-footer{
+.before-footer{
   background-color: #ffffff;
   font-size: 25px;
  margin-left: 480px;
@@ -35,12 +36,15 @@ footer{
 
 }
 main{
-  background-image: url(https://eskipaper.com/images/grey-lines-wallpaper-1.jpg);
+  background-image: url(/Images/);
+}
+#perForm{
+  margin-top: 10px;
 }
 
 .navbar {
   overflow: hidden;
-  background-color:rgb(175, 175, 175);
+  background-color:#989898;
   position: fixed;
   width: 100%;
   height: 93px;
@@ -55,6 +59,10 @@ main{
     padding-right:50px; 
     padding-top: 10px;
     
+  }
+  .hr1{
+    border: 10px solid #989898;
+  border-radius: 5px;
   }
 
 
@@ -537,7 +545,7 @@ body > main > section.us > img
 body > main > form
 {
   color: #001f3f;
-  margin-top: 16%;
+  margin-top: 10px;
   margin-left: 10%;
 }
 
@@ -556,7 +564,11 @@ fieldset
     box-shadow: rgb(116 116 116) 5px 5px 30px;
     border-radius: 0;
     font-family: 'kalam';
+    
 
+}
+#eduForm{
+  margin-top: 10px;
 }
 
 #formSection > article > table {
@@ -610,15 +622,15 @@ input:hover
 .us ul li 
 {
   display: inline;
-  margin-left:7%;
+  margin-left:1%;
 }
 
 .us ul li img 
 {
-  width:150px;
-  height:150px;
+  width:200px;
+  height:200px;
   display: inline-block;
-  border-radius:70px;
+  border-radius:100px;
 }
 
 
