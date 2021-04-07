@@ -317,7 +317,7 @@ main > section.hero2 > div > h1
 
 fieldset
 {
-    margin: 15% 15% 5% 15%;
+    margin: 10% 15% 3% 15%;
     border: solid #747474;
     padding: 13px 0px;
     text-align: center;
@@ -518,13 +518,13 @@ fieldset legend
 #userName
 {
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 #userTitle
 {
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 .edit
 {
@@ -623,7 +623,7 @@ input
     /* margin-left: 18%; */
     display: inline-block;
     /* float: left; */
-    margin-top:5%;
+    /* margin-top:5%; */
 }
 
 
@@ -632,11 +632,11 @@ input
     /* margin-left: 5.5%; */
     display: inline-block;
     /* float: right; */
-    margin-top:5%;
+    /* margin-top:5%; */
 }
 
 
-.colorBtn:hover , .submitColor:hover
+.colorBtn:hover , input#rightColorForm:hover , input#leftFontColorForm:hover , input#rightFontColorForm:hover , button#reset:hover , button#download:hover , input#leftColorForm:hover
 {
     cursor: pointer;
     background-color: #7474748c;
@@ -661,6 +661,7 @@ input
 
 .submitColor
 {
+    
     display: inline-block;
     margin: 0;
     width:auto;
@@ -676,7 +677,7 @@ input
 #div3 , #div4
 {
     display: inline-block;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     width:725px;
 }
 #div3
@@ -691,7 +692,7 @@ input
 
 div#defaultBtns {
     /* margin-left: 18%; */
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 
@@ -700,3 +701,23 @@ button {
     background-color: #e2e1e100;
     border-radius: 17px;
 }
+
+
+input#rightColorForm , input#leftFontColorForm , input#rightFontColorForm , button#reset , button#download , .colorBtn , input#leftColorForm{
+    border-radius: 0;
+    border-width: 1.5px;
+    background-color: #74747447;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 7px 10px;
+}
+
+input#custColorLeft , input#custFontColorLeft , input#custColorRight , input#custFontColorRight{
+    border-radius: 0;
+    /* border-width: 1.5px; */
+    background-color: #74747447;
+    /* margin-top: 0%; */
+    /* margin-bottom: 10%; */
+    padding: 0px 0px;
+}
+
