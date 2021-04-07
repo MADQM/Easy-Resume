@@ -140,7 +140,7 @@ document.getElementById('reset').addEventListener('click' , function(){
 ////get the data from the form and put it into the resume :
 
 let personalInfo ;
-if(localStorage.getItem('personality')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
+if(localStorage.getItem('personality')!='undefined' && localStorage.getItem('personality')!=null) //we check to make sure the local storage has data so, that will not make any problem
 {
   personalInfo = JSON.parse(localStorage.getItem('personality'));
   document.getElementById('userName').innerHTML = personalInfo.firstName +' ' + personalInfo.lastName ;
@@ -150,7 +150,7 @@ if(localStorage.getItem('personality')!='undefined') //we check to make sure the
   document.getElementById('address').innerHTML = personalInfo.locAddress; //skillName
 }
 let education;
-if(localStorage.getItem('Education')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
+if(localStorage.getItem('Education')!='undefined' && localStorage.getItem('Education')!=null) //we check to make sure the local storage has data so, that will not make any problem
 {
   education = JSON.parse(localStorage.getItem('Education'));
   //for education , we use loop becasue may we have more than education
@@ -166,7 +166,7 @@ if(localStorage.getItem('Education')!='undefined') //we check to make sure the l
 }
 
 let languages;
-if(localStorage.getItem('Language')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
+if(localStorage.getItem('Language')!='undefined' && localStorage.getItem('Language')!=null) //we check to make sure the local storage has data so, that will not make any problem
 {
   languages = JSON.parse(localStorage.getItem('Language'));
   for(let i = 0 ; i < languages.langSelected.length ; i++)
@@ -181,7 +181,7 @@ if(localStorage.getItem('Language')!='undefined') //we check to make sure the lo
 }
 
 let experience ;
-if(localStorage.getItem('Experiance')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
+if(localStorage.getItem('Experiance')!='undefined' && localStorage.getItem('Experiance')!=null) //we check to make sure the local storage has data so, that will not make any problem
 {
   experience = JSON.parse(localStorage.getItem('Experiance'));
   //for experience , we use loop becasue may we have more than one experience
@@ -196,7 +196,7 @@ if(localStorage.getItem('Experiance')!='undefined') //we check to make sure the 
 }
 
 let skills ;
-if(localStorage.getItem('Skills'))
+if(localStorage.getItem('Skills')!='undefined' && localStorage.getItem('Skills')!=null )
 {
   skills = JSON.parse(localStorage.getItem('Skills'));
   //for skills , we use loop becasue may we have more than one skill

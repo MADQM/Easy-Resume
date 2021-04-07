@@ -1,3 +1,9 @@
+
+
+let counterEdu = 1;
+let counterExp = 1;
+let counterSkill = 1;
+let counterLang = 1;
 function Education (unName,unMajor,yearOfGraduate,unDegree)
 {
   this.unName = unName;
@@ -15,6 +21,7 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
 
 
     let tableRow2 = document.createElement('tr');
+    tableRow2.setAttribute('id', `row${counterEdu}`);
     tabelElement.appendChild(tableRow2);
     const tableData = document.createElement('td');
     tableRow2.appendChild(tableData);
@@ -23,12 +30,12 @@ function Education (unName,unMajor,yearOfGraduate,unDegree)
     let eduDetails =[this.unName[this.unName.length-1],this.unMajor[this.unMajor.length-1],this.yearOfGraduate[this.yearOfGraduate.length-1],this.unDegree[this.unDegree.length-1]];  //we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
-
-
+    buttonEl.setAttribute('name', counterEdu);
+    counterEdu++;
     for (let i = 0; i < eduDetails.length; i++){
       buttonEl.setAttribute('type', 'submit');
-      buttonEl.setAttribute('name', 0);
-
+      // buttonEl.setAttribute('name', i);
+      // console.log('name' , i);
       const tableData1 = document.createElement('td');
 
 
@@ -106,6 +113,7 @@ function Experiance (tiJob,orgName,starAt,finishAt)
 
 
     const tableRow2 = document.createElement('tr');
+    tableRow2.setAttribute('id', `row${counterExp}`);
     tabelElement.appendChild(tableRow2);
     const tableData = document.createElement('td');
     tableRow2.appendChild(tableData);
@@ -114,10 +122,11 @@ function Experiance (tiJob,orgName,starAt,finishAt)
     let expDetails =[this.tiJob[this.tiJob.length-1],this.orgName[this.orgName.length-1],this.starAt[this.starAt.length-1],this.finishAt[this.finishAt.length-1]]; //we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
-
+    buttonEl.setAttribute('name', counterExp);
+    counterExp++;
     for (let i = 0; i < expDetails.length; i++){
       buttonEl.setAttribute('type', 'submit');
-      buttonEl.setAttribute('name', 0);
+      // buttonEl.setAttribute('name', 0);
       const tableData1 = document.createElement('td');
 
       tableRow2.appendChild(tableData1);
@@ -149,6 +158,7 @@ function Skills (skillName,placeOfLearning,starAt,finishAt)
 
 
     const tableRow2 = document.createElement('tr');
+    tableRow2.setAttribute('id', `row${counterSkill}`);
     tabelElement.appendChild(tableRow2);
     const tableData = document.createElement('td');
     tableRow2.appendChild(tableData);
@@ -157,10 +167,12 @@ function Skills (skillName,placeOfLearning,starAt,finishAt)
     let expDetails =[this.skillName[this.skillName.length-1],this.placeOfLearning[this.placeOfLearning.length-1],this.starAt[this.starAt.length-1],this.finishAt[this.finishAt.length-1]];//we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
+    buttonEl.setAttribute('name', counterSkill);
+    counterSkill++;
 
     for (let i = 0; i < expDetails.length; i++){
       buttonEl.setAttribute('type', 'submit');
-      buttonEl.setAttribute('name', 0);
+      // buttonEl.setAttribute('name', 0);
       const tableData1 = document.createElement('td');
 
       tableRow2.appendChild(tableData1);
@@ -191,6 +203,7 @@ function Language (langSelected,rateLanguage)
 
 
     const tableRow2 = document.createElement('tr');
+    tableRow2.setAttribute('id', `row${counterLang}`);
     tabelElement.appendChild(tableRow2);
     const tableData = document.createElement('td');
     tableRow2.appendChild(tableData);
@@ -199,10 +212,12 @@ function Language (langSelected,rateLanguage)
     let expDetails =[this.langSelected[this.langSelected.length-1],this.rateLanguage[this.rateLanguage.length-1]]; //we added the [this.propertyName.length - 1] , so we can set add the last data table
     tableData.appendChild(buttonEl);
     buttonEl.textContent = 'X';
+    buttonEl.setAttribute('name', counterLang);
+    counterLang++;
 
     for (let i = 0; i < expDetails.length; i++){
       buttonEl.setAttribute('type', 'submit');
-      buttonEl.setAttribute('name', 0);
+      // buttonEl.setAttribute('name', 0);
       const tableData1 = document.createElement('td');
 
       tableRow2.appendChild(tableData1);

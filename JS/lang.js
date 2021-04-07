@@ -40,7 +40,12 @@ tabelElement.addEventListener('click', removeItemFromCart);
 let counterConfirm = 0;
 function removeItemFromCart(event)
 {
-  tabelElement.deleteRow(1);
+  // tabelElement.deleteRow(event.target.name);
+  let row = document.getElementById(`row${event.target.name}`);
+  row.parentNode.removeChild(row);
+  langSelected.splice(event.target.name-1,1);
+  rateLanguage.splice( event.target.name-1,1);
+  newLanguage = new Language (langSelected,rateLanguage);
 }
 
 const section = document.getElementById('formSection');
@@ -70,7 +75,7 @@ function table()
 
 let langSelected = [];
 let rateLanguage =[];
-
+let newLanguage ;
 let myForm = document.getElementById('langForm');
 let formSection = document.getElementById('formSection');
 let counterClick = 0;
@@ -91,7 +96,7 @@ function addNewLanguage(event)
 
 
 
-  const newLanguage = new Language (langSelected,rateLanguage);
+  newLanguage = new Language (langSelected,rateLanguage);
 
 
 
