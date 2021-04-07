@@ -4,28 +4,69 @@
 background-position: 95% 15%;
 background-size: 35%;} */
   
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||||||||||--[[edited by Barqawi]]--||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
   
 
+}
+footer{
+  width: auto;
+  text-align: center;
+  color: #4b4b4b;
+  margin-top: 1px;
+  font-size: 25px;
+  background: url(/Images/white_grey_lines.png) no-repeat center;
+  padding:50px;
+  
+  
+}
+#before-footer{
+  background-color: #ffffff;
+  font-size: 25px;
+ margin-left: 480px;
+  width: auto;
+  color: #333;
+  margin-top: 10px;
 
+}
+main{
+  background-image: url(https://eskipaper.com/images/grey-lines-wallpaper-1.jpg);
+}
 
-
- .navbar {
+.navbar {
   overflow: hidden;
-  background-color: #747474;
+  background-color:rgb(175, 175, 175);
   position: fixed;
-  /* top: 0; */
   width: 100%;
   height: 93px;
-  /* border-bottom-style: ridge; */
-  /* border-bottom-color: #fbc63c; */
   z-index: 9;
   margin: 0px;
   }
+  .container {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    padding-left:50px; 
+    padding-right:50px; 
+    padding-top: 10px;
+    
+  }
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
   
   header .navbar h1 {
     display: inline-block;
     margin-left: 70%;
-    color: #ffffffa6;
+    color: #e9e0e0;
     font-size: 28px;
     font-family: 'kalam';
     margin-top: 3%;
@@ -35,10 +76,10 @@ background-size: 35%;} */
 
 }
 
-  header .navbar a {
+  .navbar a {
     /* float: left; */
     display:inline-block;
-    color: #000000;
+    color: #080808;
     /* text-align: center; */
     padding: 36px 50px;
     text-decoration: none;
@@ -48,8 +89,8 @@ background-size: 35%;} */
   
   
   .navbar a:hover {
-    background: #ddd;
-    color: black;
+    background: rgb(54, 53, 53);
+    color: rgb(255, 255, 255);
   }
   #logo{ 
     position: fixed;
@@ -136,7 +177,7 @@ background-size: 35%;} */
   {
     color: rgb(0 0 0);
     box-sizing: border-box;
-    margin: 0px;
+    
     padding: 0px;
     border: 0px;
     font: inherit;
@@ -150,9 +191,9 @@ background-size: 35%;} */
     height: 100px;
     padding-bottom: 0px;
     padding-top: 13px;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     top: 101px;
-    background-color: rgb(2 2 2 / 21%);
+   
   }
   #parallax
   {
@@ -193,13 +234,14 @@ background-size: 35%;} */
     border: 0;
     font: inherit;
     vertical-align: baseline;
-    font-size: 15rem;
+    font-size: 80px;
     /* font-family: 'Herr Von Muellerhoff', cursive; */
     color: #000000;
     line-height: .4;
     font-weight: 100;
     font-family: 'Tangerine', serif;
-    font-size: 100px;
+    
+    
     text-shadow: 4px 4px 4px #aaa;
   }
   
@@ -218,7 +260,7 @@ background-size: 35%;} */
     /* display: block; */
     height: 65vh;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10px;
   }
   body > main > section.overflow > div.img.aos-init.aos-animate
   {
@@ -339,16 +381,19 @@ background-size: 35%;} */
     height: 100px;
     padding-bottom: 0px;
     padding-top: 13px;
-    margin-bottom: 17%;
+    
+    margin-bottom: 130px;
   }
   .us {
-    border-radius: 50%;
+    
+   
+    padding-top: 0;
     width: 100%;
     height: 150px;
     /* box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16); */
     transition: all ease-in-out 1.0s;
   }
-  
+ 
   .us:hover {
     /* box-shadow: 0 8px 12px 0 rgba(34,60,80,.16); */
   }
@@ -362,11 +407,7 @@ background-size: 35%;} */
     border-radius: inherit;
     width: 149px;
   }
-  .container {
-    /* position: relative; */
-    width: 101%;
-    height: 700px;
-  }
+
   
   .container img {
     width: 100%;
@@ -384,7 +425,7 @@ background-size: 35%;} */
     padding: 20px 40px;
     border: none;
     cursor: pointer;
-    border-radius: 42px;
+    border-radius: 0;
     text-align: center;
   }
   
@@ -426,11 +467,7 @@ background-size: 35%;} */
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
-  body > footer
-  {
-    color: #001f3f;
-    margin-top: 10%;
-  }
+  
 
   body > ul
   {
@@ -479,9 +516,9 @@ background-size: 35%;} */
     position: relative;
     overflow: hidden;
     height: 100px;
-    padding-bottom: 0px;
+
     padding-top: 13px;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
     top: 101px;
 
 
@@ -505,8 +542,9 @@ body > main > form
 }
 
 fieldset
-{
-    width: 27%;
+{   
+    background-color: rgba(51, 51, 51, 0.219);
+    width: 38%;
     min-width: 25%;
     min-height: 200px;
     border: 1px solid;
@@ -516,7 +554,7 @@ fieldset
     /* text-align: center; */
     /* width: 600px; */
     box-shadow: rgb(116 116 116) 5px 5px 30px;
-    border-radius: 100px;
+    border-radius: 0;
     font-family: 'kalam';
 
 }
@@ -532,7 +570,7 @@ fieldset
 }
 
 input {
-  border-radius: 12px;
+  border-radius: 0;
   border-width: 1.5px;
   background-color: #74747447;
   margin-top: 5%;
@@ -543,7 +581,7 @@ input {
 button
 {
   padding: 0.5% 1%;
-    border-radius: 15px;
+    border-radius: 0;
 }
 button:hover 
 {
@@ -580,7 +618,7 @@ input:hover
   width:150px;
   height:150px;
   display: inline-block;
-  border-radius: 100px;
+  border-radius:70px;
 }
 
 
@@ -655,7 +693,7 @@ button[type="submit"]
 
 #connnfirmInfo > button{
 padding: 0.5% 1%;
-border-radius: 15px;
+border-radius: 0;
 margin-left: 15%;
 left: 375px;
 position: relative;
@@ -684,7 +722,7 @@ bottom: 602px;
 
 #chooseTemp{
   padding: 0.5% 1%;
-  border-radius: 15px;
+  border-radius: 0;
   margin-left: 15%;
   position: relative;
   bottom: 280px;
@@ -709,7 +747,7 @@ body > main > img{
 
 body > main > button{
   padding: 0.5% 1%;
-  border-radius: 15px;
+  border-radius: 0;
   margin-left: 15%;
   position: relative;
   bottom: 453px;
@@ -732,7 +770,7 @@ body > main > button{
 
 #edusubmit{
   padding: 0.5% 1%;
-    border-radius: 15px;
+    border-radius: 0;
     margin-left: 15%;
     position: absolute;
     top: 651px;
@@ -751,7 +789,7 @@ body > main > button{
 
 #expsubmit{
   padding: 0.5% 1%;
-    border-radius: 15px;
+    border-radius: 0;
     margin-left: 15%;
     position: absolute;
     top: 758px;
@@ -782,7 +820,7 @@ body > main > button{
   visibility: hidden;
   -webkit-transition: visibility 2s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
-  border-radius: 30px
+  border-radius: 0;
  }
  
  /* Hover on Parent Container */
@@ -801,7 +839,7 @@ body > main > button{
 #skillsubmit{
 
   padding: 0.5% 1%;
-  border-radius: 15px;
+  border-radius: 0;
   margin-left: 15%;
   position: absolute;
   top: 663px;
@@ -817,7 +855,7 @@ padding: 0 auto;
 #chooseTemp{
  
   padding: 0.5% 1%;
-  border-radius: 15px;
+  border-radius: 0;
   margin-left: 35%;
   left: 15px;
   position: absolute;
@@ -828,7 +866,7 @@ padding: 0 auto;
 
 #langsubmit{
   padding: 0.5% 1%;
-  border-radius: 15px;
+  border-radius: 0;
   margin-left: 15%;
   position: absolute;
   top: 346px;
