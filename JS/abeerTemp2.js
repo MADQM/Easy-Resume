@@ -19,6 +19,7 @@ let newlang = JSON.parse(localStorage.getItem('Language'));
 
 
 
+
 // loadCart();
 
 // console.log(edu.getname().firstName);
@@ -35,6 +36,8 @@ document.getElementById('email').innerHTML= newinfo.eMail;
 document.getElementById('bod').innerHTML= newinfo.bDate;
 document.getElementById('location').innerHTML= newinfo.locAddress;
 document.getElementById('phone').innerHTML= newinfo.telephonePersonal;
+document.getElementById('bio').innerHTML= newinfo.bioInfo;
+
 
 
 

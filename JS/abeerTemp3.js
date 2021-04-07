@@ -19,13 +19,15 @@ let newlang = JSON.parse(localStorage.getItem('Language'));
 
 document.getElementById('name').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
 document.getElementById('name1').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
-document.getElementById('name2').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
+// document.getElementById('name2').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
 document.getElementById('name3').innerHTML= newwinfo.firstName + ' '+ newwinfo.lastName;
 
 document.getElementById('email').innerHTML= newwinfo.eMail;
 document.getElementById('bod').innerHTML= newwinfo.bDate;
 document.getElementById('location').innerHTML= newwinfo.locAddress;
 document.getElementById('phone').innerHTML= newwinfo.telephonePersonal;
+document.getElementById('bio').innerHTML= newwinfo.bioInfo;
+
 
 
 
@@ -58,7 +60,7 @@ document.getElementById('starAt').innerHTML= newskill.starAt + ' to ' + newskill
 
 
 
-document.getElementById('tiJob').innerHTML= newexp.tiJob;
+// document.getElementById('tiJob').innerHTML= newexp.tiJob;
 document.getElementById('tiJob1').innerHTML= newexp.tiJob;
 document.getElementById('tiJob2').innerHTML= newexp.tiJob;
 
@@ -91,9 +93,9 @@ document.getElementById('starAtt').innerHTML= newexp.starAt + ' to ' + newexp.fi
 //     document.getElementById('userImg').style.display = 'block';
 //   });
   
-//   let loadFile = function(event) {
-//     let image = document.getElementById('userImg');
-//     image.src = URL.createObjectURL(event.target.files[0]);
-//   };
+  let loadFile = function(event) {
+    let image = document.getElementById('userImg');
+    image.src = URL.createObjectURL(event.target.files[0]);
+  };
   
 //   ////////////////////////
