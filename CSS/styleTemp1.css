@@ -16,6 +16,8 @@ body
     /* border-bottom-color: #fbc63c; */
     z-index: 9;
     margin: 0px;
+    font-family: serif;
+    /* font: inherit; */
     }
     
     header .navbar h1 {

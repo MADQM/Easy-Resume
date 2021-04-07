@@ -615,7 +615,7 @@ button#chooseTemp a
 
 button[type="submit"]
 {
-  margin-left: 15%;
+  margin-left: 3%;;
 }
 
 
@@ -628,7 +628,7 @@ button[type="submit"]
   color: red;
   display: inline;
 } */
-=======
+
 /* 
 .row{
   flex: 50%;
@@ -694,16 +694,16 @@ bottom: 602px;
 
 body > main > img{
   color: #001f3f;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  position: relative;
-  width: 468px;
-  bottom: 500px;
-  left: 956px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    position: relative;
+    width: 468px;
+    bottom: 684px;
+    left: 881px;
 }
 
 
@@ -732,11 +732,11 @@ body > main > button{
 
 #edusubmit{
   padding: 0.5% 1%;
-  border-radius: 15px;
-  margin-left: 15%;
-  position: relative;
-  bottom: 608px;
-  left: 357px;
+    border-radius: 15px;
+    margin-left: 15%;
+    position: absolute;
+    top: 651px;
+    left: 357px;
 }
 
 
@@ -751,11 +751,11 @@ body > main > button{
 
 #expsubmit{
   padding: 0.5% 1%;
-  border-radius: 15px;
-  margin-left: 15%;
-  position: relative;
-  bottom: 608px;
-  left: 354px;
+    border-radius: 15px;
+    margin-left: 15%;
+    position: absolute;
+    top: 758px;
+    left: 354px;
 }
 
 
@@ -803,41 +803,36 @@ body > main > button{
   padding: 0.5% 1%;
   border-radius: 15px;
   margin-left: 15%;
-  position: relative;
-  bottom: 608px;
-  left: 342px;
+  position: absolute;
+  top: 663px;
+  left: 360px;
+  height: 32px;
 }
 
 #chooseTemp{
 margin: 0 auto;
 padding: 0 auto;
 }
+
 #chooseTemp{
  
-padding: 0.5% 1%;
-border-radius: 15px;
-margin-left: 15%;
-left: 15px;
-position: relative;
-bottom: 601px;
-}
-
-#skillsubmit{
   padding: 0.5% 1%;
   border-radius: 15px;
-  margin-left: 15%;
-  position: relative;
-  bottom: 608px;
-  left: 360px;
+  margin-left: 35%;
+  left: 15px;
+  position: absolute;
+  top: 346px;
+  height: 32px;
 }
+
 
 #langsubmit{
   padding: 0.5% 1%;
   border-radius: 15px;
   margin-left: 15%;
-  position: relative;
-  bottom: 601px;
-  left: 77px;
+  position: absolute;
+  top: 346px;
+  left: 136px;
 }
 
 
@@ -854,3 +849,59 @@ bottom: 601px;
   height: 620px;
 } */
 
+.submitBtn
+{
+  margin-left: 15%;
+  position: relative;
+  bottom: 575px;
+  left: 259px;
+}
+
+
+
+button.nextBtn {
+  position: absolute;
+  top: 803px;
+  margin-left: 173px;
+  height: 32px;
+}
+
+button.previousBtn {
+  position: absolute;
+  top: 803px;
+  height: 32px;
+}
+
+
+
+button#formSubmit {
+  position: absolute;
+  top: 1005px;
+  height: 32px;
+}
+
+
+
+button#skillsNext {
+  position: absolute;
+  top: 788px;
+  left: 963px;
+  height: 32px;
+}
+
+
+button#skillsPrevious {
+  position: absolute;
+  top: 788px;
+  left: 837px;
+  height: 32px;
+}
+
+
+
+button#langPrevious {
+  position: absolute;
+  top: 495px;
+  left: 60%;
+  height: 32px;
+}

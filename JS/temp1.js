@@ -1,12 +1,5 @@
 'use strict';
 
-//get the elements you want to edit and delete
-// const imageDiv = document.getElementsByClassName('imagePart')[0];
-// const userName = document.getElementById('userName');
-// const editUserName = document.getElementById('edit');
-// const deletUserName = document.getElementById('delete');
-// const nameInput = document.getElementById('nameInput');
-
 
 window.onload = function () {
   document.getElementById('download').addEventListener('click', () => {
@@ -143,101 +136,79 @@ document.getElementById('reset').addEventListener('click' , function(){
 });
 
 
-// window.onload = function () {
-//   document.getElementById('download').addEventListener('click', () => {
-//     event.preventDefault();
-//     const downloadPdf = this.document.getElementsByClassName('container')[0];
-//     console.log(downloadPdf);
-//     console.log(window);
-//     let opt = {
-//       margin:.2,
-//       filename: 'myfile.pdf',
-//       image: { type: 'jpeg', quality: 0.98 },
-//       html2canvas: { scale: 1 },
-//       jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-//     };
-//     html2pdf().from(downloadPdf).set(opt).save();
-//   });
-// };
 
+////get the data from the form and put it into the resume :
 
-////(unName,unMajor,yearOfGraduate,unDegree)
-
-// console.log(JSON.parse(localStorage.getItem('Education')).unName);
-
-////get the data from the form and put it into the resume
-
-let personalInfo = JSON.parse(localStorage.getItem('personality'));
-let education    = JSON.parse(localStorage.getItem('Education'));
-let languages     = JSON.parse(localStorage.getItem('Language'));
-let experience   = JSON.parse(localStorage.getItem('Experiance'));
-let skills       = JSON.parse(localStorage.getItem('Skills'));
-
-document.getElementById('userName').innerHTML = personalInfo.firstName +' ' + personalInfo.lastName ;
-document.getElementById('bio').innerHTML = personalInfo.bioInfo ;
-document.getElementById('userTitle').innerHTML = experience.tiJob;
-//for contacts
-document.getElementById('email').innerHTML = personalInfo.eMail;
-document.getElementById('phone').innerHTML = personalInfo.telephonePersonal; //locAddress
-document.getElementById('address').innerHTML = personalInfo.locAddress; //skillName
-
-//for skills , we use loop becasue may we have more than one skill
-for(let i = 0 ; i < skills.skillName.length ; i++)
+let personalInfo ;
+if(localStorage.getItem('personality')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
 {
-  if(i > 3 ) //the number of skills I have in the template right now , we can change it later
-    break;
-  const id = `skill${i+1}` ;
-  document.getElementById(id).innerHTML = skills.skillName[i];
+  personalInfo = JSON.parse(localStorage.getItem('personality'));
+  document.getElementById('userName').innerHTML = personalInfo.firstName +' ' + personalInfo.lastName ;
+  document.getElementById('bio').innerHTML = personalInfo.bioInfo ;
+  document.getElementById('email').innerHTML = personalInfo.eMail;
+  document.getElementById('phone').innerHTML = personalInfo.telephonePersonal; //locAddress
+  document.getElementById('address').innerHTML = personalInfo.locAddress; //skillName
 }
-//for education , we use loop becasue may we have more than education
-for(let i = 0 ; i < education.unMajor.length ; i++)
+let education;
+if(localStorage.getItem('Education')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
 {
-  if(i > 3 ) //the number of majors I have in the template right now , we can change it later
-    break;
-  const majorId = `major${i+1}` ;
-  const studyId = `study${i+1}` ;
-  document.getElementById(majorId).innerHTML = education.unMajor[i];
-  document.getElementById(studyId).innerHTML = education.unName[i] + ' graduated at ' + education.yearOfGraduate[i];
-}
-//for experience , we use loop becasue may we have more than one experience
-for(let i = 0 ; i < experience.tiJob.length ; i++ )
-{
-  if(i > 3 ) //the number of experiences I have in the template right now , we can change it later
-    break;
-  const expId = `exp${i+1}` ;
-  document.getElementById(expId).innerHTML = experience.tiJob[i] + ' ' + experience.orgName[i] + ' ' + experience.starAt[i] + ' ' + experience.finishAt[i] ;
+  education = JSON.parse(localStorage.getItem('Education'));
+  //for education , we use loop becasue may we have more than education
+  for(let i = 0 ; i < education.unMajor.length ; i++)
+  {
+    if(i > 3 ) //the number of majors I have in the template right now , we can change it later
+      break;
+    const majorId = `major${i+1}` ;
+    const studyId = `study${i+1}` ;
+    document.getElementById(majorId).innerHTML = education.unMajor[i];
+    document.getElementById(studyId).innerHTML = education.unName[i] + ' graduated at ' + education.yearOfGraduate[i];
+  }
 }
 
-for(let i = 0 ; i < languages.langSelected.length ; i++)
+let languages;
+if(localStorage.getItem('Language')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
 {
-  if(i > 3 ) //the number of languages I have in the template right now , we can change it later
-    break;
-  const langId = `lang${i+1}`;
-  const langLevelId = `lang${i+1}Level`;
-  document.getElementById(langId).innerHTML = languages.langSelected[i] ;
-  document.getElementById(langLevelId).innerHTML = languages.rateLanguage[i] ;
+  languages = JSON.parse(localStorage.getItem('Language'));
+  for(let i = 0 ; i < languages.langSelected.length ; i++)
+  {
+    if(i > 3 ) //the number of languages I have in the template right now , we can change it later
+      break;
+    const langId = `lang${i+1}`;
+    const langLevelId = `lang${i+1}Level`;
+    document.getElementById(langId).innerHTML = languages.langSelected[i] ;
+    document.getElementById(langLevelId).innerHTML = languages.rateLanguage[i] ;
+  }
 }
 
+let experience ;
+if(localStorage.getItem('Experiance')!='undefined') //we check to make sure the local storage has data so, that will not make any problem
+{
+  experience = JSON.parse(localStorage.getItem('Experiance'));
+  //for experience , we use loop becasue may we have more than one experience
+  for(let i = 0 ; i < experience.tiJob.length ; i++ )
+  {
+    if(i > 3 ) //the number of experiences I have in the template right now , we can change it later
+      break;
+    const expId = `exp${i+1}` ;
+    document.getElementById(expId).innerHTML = experience.tiJob[i] + ' ' + experience.orgName[i] + ' ' + experience.starAt[i] + ' ' + experience.finishAt[i] ;
+  }
 
-//to hide all buttons by hidding the container div
-// document.getElementById('hideBtns').addEventListener('click', function(){
-//   document.getElementById('buttons').style.display = 'none';
-// });
+}
 
-// var doc = new jsPDF();
-// var specialElementHandlers = {
-//     '#print-btn': function (element, renderer) {
-//         return true;
-//     }
-// };
+let skills ;
+if(localStorage.getItem('Skills'))
+{
+  skills = JSON.parse(localStorage.getItem('Skills'));
+  //for skills , we use loop becasue may we have more than one skill
+  for(let i = 0 ; i < skills.skillName.length ; i++)
+  {
+    if(i > 3 ) //the number of skills I have in the template right now , we can change it later
+      break;
+    const id = `skill${i+1}` ;
+    document.getElementById(id).innerHTML = skills.skillName[i];
 
-// $('#submit').click(function () {
-//     doc.fromHTML($('#download').html(), 15, 15, {
-//         'width': 170,
-//             'elementHandlers': specialElementHandlers
-//     });
-//     doc.save('pdf-version.pdf');
-// });
+  }
+}
 
 
 //functions :
