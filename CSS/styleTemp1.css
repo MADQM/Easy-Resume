@@ -636,7 +636,7 @@ input
 }
 
 
-.colorBtn:hover , .submitColor:hover
+.colorBtn:hover , input#rightColorForm:hover , input#leftFontColorForm:hover , input#rightFontColorForm:hover , button#reset:hover , button#download:hover
 {
     cursor: pointer;
     background-color: #7474748c;
@@ -661,6 +661,7 @@ input
 
 .submitColor
 {
+    
     display: inline-block;
     margin: 0;
     width:auto;
@@ -676,7 +677,7 @@ input
 #div3 , #div4
 {
     display: inline-block;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     width:725px;
 }
 #div3
@@ -700,3 +701,23 @@ button {
     background-color: #e2e1e100;
     border-radius: 17px;
 }
+
+
+input#rightColorForm , input#leftFontColorForm , input#rightFontColorForm , button#reset , button#download , .colorBtn{
+    border-radius: 0;
+    border-width: 1.5px;
+    background-color: #74747447;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 7px 10px;
+}
+
+input#custColorLeft , input#custFontColorLeft , input#custColorRight , input#custFontColorRight{
+    border-radius: 0;
+    /* border-width: 1.5px; */
+    background-color: #74747447;
+    /* margin-top: 0%; */
+    /* margin-bottom: 10%; */
+    padding: 0px 0px;
+}
+
