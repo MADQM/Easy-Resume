@@ -13,7 +13,18 @@ tabelElement.addEventListener('click', removeItemFromCart);
 
 function removeItemFromCart(event)
 {
-  tabelElement.deleteRow(1);
+  // console.log(event.target.name);
+  // tabelElement.deleteRow(event.target.name);
+  // console.log(unName[event.target.name-1]);
+  // console.log(unName);
+  let row = document.getElementById(`row${event.target.name}`);
+  row.parentNode.removeChild(row);
+  unName.splice(event.target.name-1,1);
+  unMajor.splice( event.target.name-1,1);
+  yearOfGraduate.splice( event.target.name-1,1);
+  unDegree.splice( event.target.name-1,1);
+  newEducation = new Education (unName,unMajor,yearOfGraduate,unDegree);
+  // console.log(unName);
 }
 
 // function removeItem(item) {
@@ -76,7 +87,8 @@ let unName = [];
 let unMajor = [];
 let yearOfGraduate = [];
 let unDegree = [];
-
+let newEducation ;
+// let newEdu1 ;
 myEduForm.addEventListener('submit',addNewEducation);
 
 
@@ -95,7 +107,8 @@ function addNewEducation(event)
   unDegree.push( event.target.unDegree.value);
 
 
-  const newEducation = new Education (unName,unMajor,yearOfGraduate,unDegree);
+   newEducation = new Education (unName,unMajor,yearOfGraduate,unDegree);
+
   newEducation.headerRander();
   myEduForm.reset();
   //   newEducation.render();
@@ -117,5 +130,7 @@ function addNewEducation(event)
     }
   }
 }
+
+//   newEducation.render();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////

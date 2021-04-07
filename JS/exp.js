@@ -43,7 +43,18 @@ tabelElement.addEventListener('click', removeItemFromCart);
 let counterConfirm = 0;
 function removeItemFromCart(event)
 {
-  tabelElement.deleteRow(1);
+
+  // console.log(event.target.name);
+  // tabelElement.deleteRow(event.target.name);
+  // console.log(unName[event.target.name-1]);
+  let row = document.getElementById(`row${event.target.name}`);
+  row.parentNode.removeChild(row);
+  tiJob.splice(event.target.name-1,1);
+  orgName.splice( event.target.name-1,1);
+  starAt.splice( event.target.name-1,1);
+  finishAt.splice( event.target.name-1,1);
+  newExperiance = new Experiance (tiJob,orgName,starAt,finishAt);
+
 }
 const section = document.getElementById('formSection');
 const articleElement = document.createElement('article');
@@ -82,7 +93,7 @@ let tiJob =[];
 let orgName = [];
 let starAt =[];
 let finishAt =[];
-
+let newExperiance ;
 myForm.addEventListener('submit',addNewExperiance);
 
 function addNewExperiance(event)
@@ -100,7 +111,7 @@ function addNewExperiance(event)
   finishAt.push(event.target.finishAt.value);
 
 
-  const newExperiance = new Experiance (tiJob,orgName,starAt,finishAt);
+  newExperiance = new Experiance (tiJob,orgName,starAt,finishAt);
   newExperiance.headerRander();
   //   newEducation.render();
   myForm.reset();

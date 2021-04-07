@@ -44,7 +44,14 @@ let counterConfirm = 0;
 
 function removeItemFromCart(event)
 {
-  tabelElement.deleteRow(1);
+  // tabelElement.deleteRow(event.target.name);
+  let row = document.getElementById(`row${event.target.name}`);
+  row.parentNode.removeChild(row);
+  skillName.splice(event.target.name-1,1);
+  placeOfLearning.splice( event.target.name-1,1);
+  starAt.splice( event.target.name-1,1);
+  finishAt.splice( event.target.name-1,1);
+  newSkills = new Skills (skillName,placeOfLearning,starAt,finishAt);
 }
 const section = document.getElementById('formSection');
 const articleElement = document.createElement('article');
@@ -79,6 +86,7 @@ let skillName = [];
 let placeOfLearning = [];
 let starAt = [];
 let finishAt = [];
+let newSkills ; 
 
 let myForm = document.getElementById('skillForm');
 let formSection = document.getElementById('formSection');
@@ -100,7 +108,7 @@ function addNewSkill(event)
   finishAt.push(event.target.finishAt.value);
 
 
-  const newSkills = new Skills (skillName,placeOfLearning,starAt,finishAt);
+  newSkills = new Skills (skillName,placeOfLearning,starAt,finishAt);
   newSkills.headerRander();
   //   newEducation.render();
   // let data= JSON.stringify(newSkills);
