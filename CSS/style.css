@@ -37,6 +37,9 @@ footer{
 main{
   background-image: url(https://eskipaper.com/images/grey-lines-wallpaper-1.jpg);
 }
+#perForm{
+  margin-top: 10px;
+}
 
 .navbar {
   overflow: hidden;
@@ -537,7 +540,7 @@ body > main > section.us > img
 body > main > form
 {
   color: #001f3f;
-  margin-top: 16%;
+  margin-top: 10px;
   margin-left: 10%;
 }
 
@@ -556,7 +559,11 @@ fieldset
     box-shadow: rgb(116 116 116) 5px 5px 30px;
     border-radius: 0;
     font-family: 'kalam';
+    
 
+}
+#eduForm{
+  margin-top: 10px;
 }
 
 #formSection > article > table {
