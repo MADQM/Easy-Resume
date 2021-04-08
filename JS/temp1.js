@@ -63,6 +63,10 @@ function randomNumber(min, max)
   }
 }
 
+document.getElementById('font').addEventListener('change',function(){
+  document.getElementsByClassName('leftSection')[0].style.fontSize= `${document.getElementById('font').value}px`;
+  document.getElementsByClassName('rightSection')[0].style.fontSize= `${document.getElementById('font').value}px` ;
+} );
 
 //to check if the user clicked the change color button for the left section , so it will change the color
 document.getElementById('changeColorLeft').addEventListener('click', function(){

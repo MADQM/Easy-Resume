@@ -43,9 +43,9 @@
               <label for="unMajor">Major:</label><br>
               <input type="text" id="unMajor" name="unMajor" required><br>
               <label for="yearOfGraduate">Year Of Graduate :</label><br>
-              <input type="number" pattern='[0-9]{4}' id="yearOfGraduate" name="yyyy" required><br>
+              <input type="date" pattern='[0-9]{4}' id="yearOfGraduate" name="yyyy" max="2021-03-30" min="" required><br>
               <label for="unDegree">GPA:</label><br>
-          <input type="number" id="unDegree" name="unDegree" required><br>
+          <input type="number" id="unDegree" name="unDegree" step="0.1" min="0" max="4" required><br>
               
           <input type="submit" value="Add">
 

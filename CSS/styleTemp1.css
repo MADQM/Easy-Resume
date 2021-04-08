@@ -435,6 +435,7 @@ fieldset legend
     min-height:100%;
     background-color:#f5e0e042;
     float:right;
+    font-size: 20px;
     /* box-shadow: 28px 0px #00000054; */
 }
 
@@ -457,13 +458,13 @@ fieldset legend
 #bio
 {
     margin-left:10%;
-    font-size:20px
+    /* font-size:20px */
 }
 
 #exp
 {
     margin-left:10%;
-    font-size:20px
+    /* font-size:20px */
 }
 
 .experience
@@ -475,7 +476,7 @@ fieldset legend
 .experience li
 {
     margin-bottom:5%;
-    font-size:20px;
+    /* font-size:20px; */
 }
 
 .languages
@@ -487,7 +488,7 @@ fieldset legend
 .languages li
 {
     margin-bottom:5%;
-    font-size:20px;
+    /* font-size:20px; */
 }
 
 .languages li .rated
@@ -508,6 +509,10 @@ fieldset legend
 }
 
 
+.rightSection h1
+{
+    font-size: 20px;
+}
 
 
 
@@ -721,3 +726,10 @@ input#custColorLeft , input#custFontColorLeft , input#custColorRight , input#cus
     padding: 0px 0px;
 }
 
+#font
+{
+    display: inline-block;
+    width: 8%;
+    /* background-color: #7474743b; */
+    margin-left: 2%;
+}
