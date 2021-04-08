@@ -3,7 +3,7 @@ let edu;
 let exp;
 let skill;
 let lang;
-// let eddu=[];
+
 function loadPersonality() {
   const normalObject = JSON.parse(localStorage.getItem('personality')) || [];
   info = new Personality(normalObject);
@@ -30,37 +30,7 @@ function loadLanguage() {
   console.log(lang);
 }
 
-// loadPersonality();
-// loadEducation();
-// loadExperiance();
-// loadSkills();
-// loadLanguage();
-// console.log(info.getname());
-// console.log(edu.getEduname().unName[0]);
-// console.log(exp.getExpname());
-// console.log(skill.getSkillname());
-// console.log(lang.getLangname());
-// console.log(info.getname());
 
-
-
-// let major = document.getElementById('currentllyMajor');
-// major.textContent=edu.getEduname().unName;
-/*
-the Id in HTML :
-fullName
-currentllyMajor
-aboutMe
-bDate
-eMail
-telephone
-localAddress
-
-eduMajor1
-eduUN1
-eduGraduate1
-
-*/
 function showPersonalityInformation (){
   loadPersonality();
 
@@ -83,62 +53,81 @@ function showEducationalInformation()
 
   loadEducation();
 
-  let eduUN1 = document.getElementById('eduUN1');
-  eduUN1.textContent=edu.getEduname().unName[0];
-  let eduUN2 = document.getElementById('eduUN2');
-  eduUN2.textContent=edu.getEduname().unName[1];
-  let eduUN3 = document.getElementById('eduUN3');
-  eduUN3.textContent=edu.getEduname().unName[2];
+  let eduFather = document.getElementById('eduFather');
 
-  let eduMajor1 = document.getElementById('eduMajor1');
-  eduMajor1.textContent=edu.getEduname().unMajor[0];
-  let eduMajor2 = document.getElementById('eduMajor2');
-  eduMajor2.textContent=edu.getEduname().unMajor[1];
-  let eduMajor3 = document.getElementById('eduMajor3');
-  eduMajor3.textContent=edu.getEduname().unMajor[2];
+  for (let i = 0; i <edu.getEduname().unName.length; i++) {
+    let div3 = document.createElement('div');
+    let div4 = document.createElement('div');
+
+    let div1 = document.createElement('div');
+    let span = document.createElement('span');
+    let div2 = document.createElement('div');
+
+    div4.setAttribute('class', 'timeline-card timeline-card-primary card shadow-sm');
+    div3.setAttribute('class', 'card-body');
+    div1.setAttribute('class', 'h5 mb-1');
+    span.setAttribute('class', 'text-muted h6');
+    div2.setAttribute('class', 'text-muted text-small mb-2');
+    div1.innerText = edu.getEduname().unName[i];
+    span.innerHTML =edu.getEduname().unMajor[i];
+    let date = edu.getEduname().yearOfGraduate[i];
+    div2.innerHTML=date;
+
+    eduFather.appendChild(div4);
+    div4.appendChild(div3);
+
+    div3.appendChild(div1);
+    div1.appendChild(span);
+    div1.appendChild(div2);
+    div3.appendChild(div2);
 
 
-  let eduGraduate1 = document.getElementById('eduGraduate1');
-  eduGraduate1.textContent=edu.getEduname().yearOfGraduate[0];
-  let eduGraduate2 = document.getElementById('eduGraduate2');
-  eduGraduate2.textContent=edu.getEduname().yearOfGraduate[1];
-  let eduGraduate3 = document.getElementById('eduGraduate3');
-  eduGraduate3.textContent=edu.getEduname().yearOfGraduate[2];
 
+
+
+
+  }
 
 
 
 }
 
-// console.log(exp.getExpname().orgName[0]);
+
 function showExperianceInformation ()
 {
 
   loadExperiance();
 
+  let expFather = document.getElementById('expFather');
 
-  let exp1 = document.getElementById('exp1');
-  exp1.textContent=`${exp.getExpname().tiJob[0]} @ ${exp.getExpname().orgName[0]}`;
-  let exp2 = document.getElementById('exp2');
-  exp2.textContent=`${exp.getExpname().tiJob[1]} @ ${exp.getExpname().orgName[1]}`;
-  let exp3 = document.getElementById('exp3');
-  exp3.textContent=`${exp.getExpname().tiJob[2]} @ ${exp.getExpname().orgName[2]}`;
+  for (let i = 0; i < exp.getExpname().orgName.length; i++) {
+    let div3 = document.createElement('div');
+    let div4 = document.createElement('div');
+    let div1 = document.createElement('div');
+    let span = document.createElement('span');
+    let div2 = document.createElement('div');
+    div4.setAttribute('class', 'timeline-card timeline-card-primary card shadow-sm');
+    div3.setAttribute('class', 'card-body');
+    div1.setAttribute('class', 'h5 mb-1');
+    span.setAttribute('class', 'text-muted h6');
+    div2.setAttribute('class', 'text-muted text-small mb-2');
+
+    div1.innerText = exp.getExpname().tiJob[i];
+    span.innerHTML =exp.getExpname().orgName[i];
+    let date = ` ${exp.getExpname().starAt[i]} /     ${exp.getExpname().finishAt[i]}`;
+    div2.innerHTML=date;
 
 
-  // let expOrg1 = document.getElementById('expOrg1');
-  // expOrg1.textContent=;
-  // let expOrg2 = document.getElementById('expOrg2');
-  // expOrg2.textContent=exp.getExpname().orgName[1];
-  // let expOrg3 = document.getElementById('expOrg3');
-  // expOrg3.textContent=exp.getExpname().orgName[2];
+    expFather.appendChild(div4);
+    div4.appendChild(div3);
+    div3.appendChild(div1);
+    div1.appendChild(span);
+    div1.appendChild(div2);
+    div3.appendChild(div2);
 
 
-  let expStartAndFinish1 = document.getElementById('expStartAndFinish1');
-  expStartAndFinish1.textContent= ` ${exp.getExpname().starAt[0]} /     ${exp.getExpname().finishAt[0]}`;
-  let expStartAndFinish2 = document.getElementById('expStartAndFinish2');
-  expStartAndFinish2.textContent=` ${exp.getExpname().starAt[1]} /  ${exp.getExpname().finishAt[1]}`;
-  let expStartAndFinish3 = document.getElementById('expStartAndFinish3');
-  expStartAndFinish3.textContent=` ${exp.getExpname().starAt[2]} /     ${exp.getExpname().finishAt[2]}`;
+
+  }
 
 
 }
@@ -149,24 +138,66 @@ function showSkillsInformation ()
   loadSkills();
 
   loadLanguage();
-  let skill1 = document.getElementById('skill1');
-  skill1.textContent=skill.getSkillname().skillName[0];
-  let skill2 = document.getElementById('skill2');
-  skill2.textContent=skill.getSkillname().skillName[1];
-  let skill3 = document.getElementById('skill3');
-  skill3.textContent=skill.getSkillname().skillName[2];
+  let skillsfather = document.getElementById('skillsfather');
+  skillsfather.setAttribute('class', 'col-md-6');
 
-  let skill4 = document.getElementById('skill4');
-  skill4.textContent=lang.getLangname().langSelected[0];
-  let skill5 = document.getElementById('skill5');
-  skill5.textContent=lang.getLangname().langSelected[1];
+  for (let i = 0; i < skill.getSkillname().skillName.length; i++) {
 
+    let div1 = document.createElement('div');
+    let span = document.createElement('span');
+    let div2 = document.createElement('div');
+    let div3 = document.createElement('div');
+    div1.setAttribute('class', 'mb-3');
+    span.setAttribute('class', 'fw-bolder');
+    div2.setAttribute('class', 'progress my-2 rounded');
+    div2.setAttribute('style', 'height: 20px');
+    div3.setAttribute('class', 'progress-bar bg-info');
+    div3.setAttribute('style', 'width: 95%');
+    let nameOfSkill = skill.getSkillname().skillName[i];
+    let tagOfSpan = '<span  class="fw-bolder">' + nameOfSkill + '</span>  ';
+    div3.setAttribute('role', 'progressbar');
+    span.innerHTML = tagOfSpan;
+    skillsfather.appendChild(div1);
+    div1.appendChild(span);
+    div1.appendChild(div2);
+    div2.appendChild(div3);
+  }
 
 }
 
+function showLanguageInformation() {
+  loadLanguage();
+  let skillsfather = document.getElementById('skillsfather');
+  skillsfather.setAttribute('class', 'col-md-6');
+
+  for (let i = 0; i < lang.getLangname().langSelected.length; i++) {
+
+    let div1 = document.createElement('div');
+    let span = document.createElement('span');
+    let div2 = document.createElement('div');
+    let div3 = document.createElement('div');
+    div1.setAttribute('class', 'mb-3');
+    span.setAttribute('class', 'fw-bolder');
+    div2.setAttribute('class', 'progress my-2 rounded');
+    div2.setAttribute('style', 'height: 20px');
+    div3.setAttribute('class', 'progress-bar bg-secondary');
+    div3.setAttribute('style', 'width: 95%');
+    let nameOfLanguage = lang.getLangname().langSelected[i];
+    let tagOfSpan = '<span  class="fw-bolder">' + nameOfLanguage + '</span>  ';
+    div3.setAttribute('role', 'progressbar');
+    span.innerHTML = tagOfSpan;
+    skillsfather.appendChild(div1);
+    div1.appendChild(span);
+    div1.appendChild(div2);
+    div2.appendChild(div3);
+
+  }
+
+
+}
 
 showPersonalityInformation ();
 showEducationalInformation();
 showExperianceInformation ();
 showSkillsInformation ();
-
+showLanguageInformation();
