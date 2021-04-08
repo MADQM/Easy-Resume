@@ -48,7 +48,7 @@ main{
 }
 #edForm > img{
   position: absolute;
-  top: 28px;
+  top: 77px;
     left: 770px;
 }
 #expForm{
@@ -57,8 +57,9 @@ main{
 
 body > main > img{
   position: absolute;
-  top: 46px;
+  top: 60px;
     left: 766px;
+    width:30%;
 }
 .form-image{
   box-sizing: border-box;
@@ -608,12 +609,7 @@ fieldset
   margin-top: 10px;
 }
 
-#formSection > article > table {
-  width: 70%;
-  border-collapse: collapse;
-  margin-left: 11%;
-  margin-top: 5%;
-}
+
  tr, th, td {
   padding: 8px;
 }
@@ -861,10 +857,15 @@ body > main > button{
 }
 #formSection > article{
   position: absolute;
-  top: 419px;
+  top: 650px;
+  left: 0px;
   right: 592px;
 }
-
+#tableLangauge{
+  position: absolute;
+  bottom: 150px;
+}
+/*  */
 /*
   padding: 0.5% 1%;
     border-radius: 0;
@@ -1111,7 +1112,7 @@ button#formSubmit {
   color: white;
   width: 100px;
   height: 32px;
-  top: 795px;
+  top: 801px;
     left: 295px;
 }
 
