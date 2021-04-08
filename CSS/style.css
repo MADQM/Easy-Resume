@@ -856,9 +856,15 @@ body > main > button{
  color: white;
  width: 100px;
  height: 32px;
- top: 469px;
+ top: 474px;
  left: 426px;
 }
+#formSection > article{
+  position: absolute;
+  top: 419px;
+  right: 592px;
+}
+
 /*
   padding: 0.5% 1%;
     border-radius: 0;
@@ -987,7 +993,11 @@ padding: 0 auto;
   top: 229px;
 }
 
-
+#formEduSection > article{
+  position: absolute;
+  top: 580px;
+  
+}
 /* body > main > div > img{
   color: #001f3f;
   margin: 0;
