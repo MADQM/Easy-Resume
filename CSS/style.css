@@ -1156,3 +1156,31 @@ button#langPrevious {
   right: 800px;
   margin-left: 300px;
 }
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 200px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bolder;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #c6b6f3;
+  
+  
+}
+
+
+#tableEdu > tr:nth-child(1){
+  background-color: rgb(133, 86, 133);
+color: white;
+font-size: 1.3em;
+}
+
+#table > tr:nth-child(1){
+  background-color: rgb(133, 86, 133);
+  color: white;
+  font-size: 1.3em;
+}
