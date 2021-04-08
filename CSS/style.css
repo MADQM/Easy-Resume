@@ -9,8 +9,8 @@ background-size: 35%;} */
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding:0;
+  /* margin: 0;
+  padding:0; */
   
 
 }
@@ -40,7 +40,44 @@ main{
 }
 #perForm{
   margin-top: 10px;
+  display: flex;
 }
+#edForm{
+  margin-top: 126px;
+
+}
+#edForm > img{
+  position: absolute;
+  top: 28px;
+    left: 770px;
+}
+#expForm{
+  margin-top: 126px;
+}
+
+body > main > img{
+  position: absolute;
+  top: 46px;
+    left: 766px;
+}
+.form-image{
+  box-sizing: border-box;
+  color: #001f3f;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+  width: 468px;
+  left: 731px;
+  bottom: 601px;
+}
+#perForm > fieldset{
+  margin-top: 30px;
+}
+
 
 .navbar {
   overflow: hidden;
@@ -655,12 +692,23 @@ input:hover
 button#chooseTemp a
 {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 #chooseTemp
-{
-  margin-left: 10%;
+{     box-sizing: border-box;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 200px;
+  bottom: 280px;
+  margin: 0 auto;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  margin-left: 35%;
+  position: absolute;
+  top: 346px;
+  height: 32px;
+  left: 0px;
 }
 
 button[type="submit"]
@@ -730,8 +778,17 @@ bottom: 602px;
   bottom: 280px;
   left: 34px;
 } */
-
-
+#eduForm > fieldset > input[type=submit]:nth-child(18){
+  background-color:rgb(59, 59, 59);
+  color: white;
+  width: 100px;
+  
+}
+#perForm > fieldset > input[type=submit]:nth-child(30){
+  background-color:rgb(59, 59, 59);
+  color: white;
+  width: 100px;
+}
 #chooseTemp{
   padding: 0.5% 1%;
   border-radius: 0;
@@ -740,21 +797,13 @@ bottom: 602px;
   bottom: 280px;
   left: 15px;
 }
-
-
-body > main > img{
-  color: #001f3f;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    position: relative;
-    width: 468px;
-    bottom: 684px;
-    left: 881px;
-}
+/* 
+#formSubmit{
+  top: 765px;
+    left: 281px;
+} */
+/* top: 765px;
+    left: 281px; */
 
 
 body > main > button{
@@ -779,15 +828,45 @@ body > main > button{
   left: 956px;
   bottom: 279px;
 }
-
-#edusubmit{
+#expForm > fieldset > input[type=submit]:nth-child(18){
+  background-color: rgb(59, 59, 59);
+ color: white;
+ width: 100px;
+ height: 32px;
+}
+#expsubmit{
+  box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  margin-left: 3%;
+  position: absolute;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 100px;
+  height: 32px;
+  top: 557px;
+  left: 450px;
+}
+ #edusubmit {   box-sizing: border-box;
+ padding: 0.5% 1%;
+ border-radius: 0;
+ margin-left: 3%;
+ position: absolute;
+ background-color: rgb(59, 59, 59);
+ color: white;
+ width: 100px;
+ height: 32px;
+ top: 469px;
+ left: 426px;
+}
+/*
   padding: 0.5% 1%;
     border-radius: 0;
     margin-left: 15%;
     position: absolute;
     top: 651px;
     left: 357px;
-}
+} */
 
 
 /* .us span {
@@ -799,14 +878,6 @@ body > main > button{
 
 /* .homepage #page section:hover p */
 
-#expsubmit{
-  padding: 0.5% 1%;
-    border-radius: 0;
-    margin-left: 15%;
-    position: absolute;
-    top: 758px;
-    left: 354px;
-}
 
 
 /* Parent Container */
@@ -847,16 +918,22 @@ body > main > button{
   opacity: 1; 
  }
 
-
-#skillsubmit{
-
+ #skillForm > fieldset > input[type=submit]:nth-child(14){
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 100px;
+ }
+#skillsubmit{    box-sizing: border-box;
   padding: 0.5% 1%;
   border-radius: 0;
-  margin-left: 15%;
+  margin-left: 3%;
   position: absolute;
-  top: 663px;
-  left: 360px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 100px;
   height: 32px;
+  left: 426px;
+  top: 473px;
 }
 
 #chooseTemp{
@@ -874,15 +951,40 @@ padding: 0 auto;
   top: 346px;
   height: 32px;
 }
-
-
-#langsubmit{
+#langForm > fieldset{
+  color: #001f3f;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: rgba(51, 51, 51, 0.219);
+  width: 38%;
+  min-width: 25%;
+  min-height: 200px;
+  margin: 0px 7%;
+  border: solid rgb(116, 116, 116);
+  padding: 13px 11%;
+  box-shadow: rgb(116 116 116) 5px 5px 30px;
+  border-radius: 0;
+  font-family: 'kalam';
+  margin-top: 121px;
+}
+#langForm > fieldset > input[type=submit]{
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 100px;
+}
+#langsubmit{      box-sizing: border-box;
   padding: 0.5% 1%;
   border-radius: 0;
-  margin-left: 15%;
+  margin-left: 3%;
   position: absolute;
-  top: 346px;
-  left: 136px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 100px;
+  height: 32px;
+  left: 426px;
+  top: 229px;
 }
 
 
@@ -907,51 +1009,178 @@ padding: 0 auto;
   left: 259px;
 }
 
-
-
-button.nextBtn {
+#edForm > button.previousBtn{
   position: absolute;
-  top: 803px;
+  box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
+  margin-left: 3%;
+  height: 32px;
+  top: 467px;
+  left: 58px;
+  background:rgb(221, 183, 221);
+  width: 100px;
+}
+#edForm > button.nextBtn {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
   margin-left: 173px;
   height: 32px;
+  top: 469px;
+  left: 544px;
+  background:rgb(221, 183, 221);
+  width: 100px;
 }
-
-button.previousBtn {
-  position: absolute;
-  top: 803px;
+button.nextBtn {    position: absolute;
+  box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
+  margin-left: 173px;
   height: 32px;
+  left: 544px;
+  background: rgb(221, 183, 221);
+  width: 100px;
+  top: 559px;
+}
+#skillForm > fieldset{
+  color: #001f3f;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: rgba(51, 51, 51, 0.219);
+  width: 38%;
+  min-width: 25%;
+  min-height: 200px;
+  margin: 0px 7%;
+  border: solid rgb(116, 116, 116);
+  padding: 13px 11%;
+  box-shadow: rgb(116 116 116) 5px 5px 30px;
+  border-radius: 0;
+  font-family: 'kalam';
+  margin-top: 120px;
+}
+button.previousBtn {    box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
+  margin-left: 3%;
+  position: absolute;
+  height: 32px;
+  background: rgb(221, 183, 221);
+  top: 558px;
+  left: 53px;
 }
 
 
+#formNext{
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
+  margin-left: 3%;
+  position: absolute;
+  top: 771px;
+  padding-bottom: 26px;
+  left: 706px;
+  background:rgb(221, 183, 221);
+  width: 100px;
+  
+}
 
 button#formSubmit {
   position: absolute;
-  top: 1005px;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  width: 100px;
   height: 32px;
+  top: 795px;
+    left: 295px;
+}
+
+#eduForm > fieldset{
+margin-top: 60px;
 }
 
 
 
 button#skillsNext {
+  box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
+  margin-left: 3%;
   position: absolute;
-  top: 788px;
-  left: 963px;
   height: 32px;
+  background: rgb(221, 183, 221);
+  width: 100px;
+  top: 478px;
+  left: 663px;
 }
 
 
 button#skillsPrevious {
+  box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
+  margin-left: 3%;
   position: absolute;
-  top: 788px;
-  left: 837px;
   height: 32px;
+  background: rgb(221, 183, 221);
+  width: 100px;
+  top: 478px;
+  left: 63px;
 }
 
 
 
 button#langPrevious {
+  box-sizing: border-box;
+  padding: 0.5% 1%;
+  border-radius: 0;
+  bottom: 453px;
   position: absolute;
-  top: 495px;
-  left: 60%;
   height: 32px;
+  background: rgb(221, 183, 221);
+  width: 100px;
+  top: 345px;
+  left: 0px;
+  right: 800px;
+  margin-left: 300px;
+}
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 200px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bolder;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #c6b6f3;
+  
+  
+}
+
+
+#tableEdu > tr:nth-child(1){
+  background-color: rgb(133, 86, 133);
+color: white;
+font-size: 1.3em;
+}
+
+#table > tr:nth-child(1){
+  background-color: rgb(133, 86, 133);
+  color: white;
+  font-size: 1.3em;
 }

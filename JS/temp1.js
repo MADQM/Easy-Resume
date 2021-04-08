@@ -63,6 +63,10 @@ function randomNumber(min, max)
   }
 }
 
+document.getElementById('font').addEventListener('change',function(){
+  document.getElementsByClassName('leftSection')[0].style.fontSize= `${document.getElementById('font').value}px`;
+  document.getElementsByClassName('rightSection')[0].style.fontSize= `${document.getElementById('font').value}px` ;
+} );
 
 //to check if the user clicked the change color button for the left section , so it will change the color
 document.getElementById('changeColorLeft').addEventListener('click', function(){
@@ -191,6 +195,8 @@ if(localStorage.getItem('Experiance')!='undefined' && localStorage.getItem('Expe
       break;
     const expId = `exp${i+1}` ;
     document.getElementById(expId).innerHTML = experience.tiJob[i] + ' ' + experience.orgName[i] + ' ' + experience.starAt[i] + ' ' + experience.finishAt[i] ;
+    if(i==(experience.tiJob.length-1))
+      document.getElementById('userTitle').innerHTML = experience.tiJob[i];
   }
 
 }
