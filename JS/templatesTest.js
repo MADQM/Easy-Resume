@@ -3,7 +3,7 @@ let edu;
 let exp;
 let skill;
 let lang;
-// let eddu=[];
+
 function loadPersonality() {
   const normalObject = JSON.parse(localStorage.getItem('personality')) || [];
   info = new Personality(normalObject);
