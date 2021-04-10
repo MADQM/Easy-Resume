@@ -1,4 +1,4 @@
-const tabelElement = document.getElementById('table');
+const tabelElement = document.getElementById('tableLangauge');
 tabelElement.addEventListener('click', removeItemFromCart);
 // function Language (langSelected,rateLanguage)
 // {
